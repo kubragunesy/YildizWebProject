@@ -1,0 +1,15 @@
+C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\BusinessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\BusinessLayer\bin\Debug\EntitiyLayer.dll
+C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\BusinessLayer\bin\Debug\EntityFramework.dll
+C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\BusinessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\BusinessLayer\bin\Debug\DataAccessLayer.dll.config
+C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\BusinessLayer\bin\Debug\EntitiyLayer.pdb
+C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\BusinessLayer\bin\Debug\EntitiyLayer.dll.config
+C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\BusinessLayer\bin\Debug\EntityFramework.xml
+C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\BusinessLayer\obj\Debug\BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
+C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\BusinessLayer\obj\Debug\BusinessLayer.pdb
