@@ -1,0 +1,32 @@
+﻿@using EntitiyLayer.Concrete;
+@model List<Business>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<table>
+    <tr>
+        <th>Hizmet ID</th>
+        <th>Hizmet Adı</th>
+        <th>Hizmet Açıklama</th>
+        <th>Sil</th>
+        <th>Güncelle</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @item.businessId
+            </td>
+            <td>
+                @item.businessName
+            </td>
+            <td>
+                @item.businessDescription
+            </td>
+        </tr>
+    }
+
+</table>
+
