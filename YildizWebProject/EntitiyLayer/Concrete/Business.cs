@@ -13,5 +13,7 @@ namespace EntitiyLayer.Concrete
         public int businessId { get; set; }
         public string businessName { get; set; }
         public string businessDescription { get; set; }
+        public bool statu { get; set; }
     }
+
 }

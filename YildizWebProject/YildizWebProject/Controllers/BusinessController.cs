@@ -1,12 +1,6 @@
 ﻿using BusinessLayer.Concrete;
 using DataAccessLayer.EntityFramework;
-using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
-using YildizWebProject.Models.Entity;
 using EntitiyLayer.Concrete;
 
 namespace YildizWebProject.Controllers
@@ -19,6 +13,37 @@ namespace YildizWebProject.Controllers
         {
             var degerler = businessManager.GetAll();
             return View(degerler);
+        }
+        [HttpGet]
+        public ActionResult YeniHizmet()
+        {
+            
+            return View();
+        }
+        [HttpPost]
+        public ActionResult YeniHizmet(Business business)
+        {
+            businessManager.Insert(business);
+            return RedirectToAction("Index");
+        }
+        public ActionResult SilHizmet(int id)
+        {
+            var hizmet = businessManager.Get(id);
+            hizmet.statu = false;
+            businessManager.Update(hizmet);
+            return RedirectToAction("Index");
+        }
+        [HttpGet]
+        public ActionResult GuncelleHizmet(int id)
+        {
+            var guncelle = businessManager.Get(id);
+            return View(guncelle);
+        }
+        [HttpPost]
+        public ActionResult GuncelleHizmet(Business business)
+        {
+            businessManager.Update(business);
+            return RedirectToAction("Index");
         }
     }
 }

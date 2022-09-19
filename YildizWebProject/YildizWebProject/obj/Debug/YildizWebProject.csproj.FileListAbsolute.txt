@@ -54,6 +54,8 @@ C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\Antlr3.
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\BusinessLayer.dll
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\DataAccessLayer.dll
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\EntitiyLayer.dll
+C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\EntityFramework.dll
+C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\EntityFramework.SqlServer.dll
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\Newtonsoft.Json.dll
@@ -65,12 +67,13 @@ C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\System.
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\System.Web.WebPages.dll
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\System.Web.WebPages.Razor.dll
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\WebGrease.dll
-C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\EntityFramework.dll
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\BusinessLayer.pdb
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\DataAccessLayer.pdb
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\DataAccessLayer.dll.config
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\EntitiyLayer.pdb
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\EntitiyLayer.dll.config
+C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\EntityFramework.xml
+C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\EntityFramework.SqlServer.xml
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\System.Web.Helpers.xml
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\System.Web.Mvc.xml
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\System.Web.Optimization.xml
@@ -81,7 +84,6 @@ C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\System.
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\Newtonsoft.Json.xml
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\Antlr3.Runtime.pdb
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\EntityFramework.xml
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\obj\Debug\YildizWebProject.csproj.AssemblyReference.cache
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\obj\Debug\YildizWebProject.csproj.CoreCompileInputs.cache
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\obj\Debug\YildizWebProject.csproj.CopyComplete

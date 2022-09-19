@@ -12,7 +12,7 @@ namespace DataAccessLayer.EntityFramework
 {
     public class EfGenericDal<T> : IGenericDal<T> where T : class
     {
-        Context context;
+        Context context= new Context();
         DbSet<T> _object;
         public EfGenericDal()
         {

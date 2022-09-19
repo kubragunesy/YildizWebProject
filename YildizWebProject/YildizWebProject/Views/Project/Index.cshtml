@@ -1,8 +1,30 @@
-﻿
+﻿@using EntitiyLayer.Concrete;
+@model List<Project>
 @{
     ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_MainLayout.cshtml";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
 }
 
-<h2>projeler</h2>
-
+<table class="table">
+    <tr>
+        <th> Proje ID</th>
+        <th> Proje Adı</th>
+        <th> Proje Açıklama</th>
+        <th> Medya ID</th>
+    </tr>
+    @foreach(var item in Model)
+     {
+        <tr>
+            <td>@item.projectId</td>
+            <td>@item.projectName</td>
+            <td>@item.projectDescription</td>
+            <td>@item.mediaId</td>
+            <td>
+                <a class="btn btn-outline-danger" href="#">SİL</a>
+                <a class="btn btn-outline-primary" href="#">GÜNCELLE</a>
+            </td>
+        </tr>
+     }
+</table>
+@*<button class="btn btn-success">Yeni Proje Ekle</button>*@
+<a href="~/Project/YeniProje/" class="btn btn-success">YENİ POJE EKLE</a>

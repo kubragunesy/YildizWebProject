@@ -16,5 +16,6 @@ namespace EntitiyLayer.Concrete
         public string customerMail { get; set; }
         public string customerPhoneNumber { get; set; }
         public string customerMessage { get; set; }
+        public bool statu { get; set; }
     }
 }

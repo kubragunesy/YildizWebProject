@@ -1,10 +1,12 @@
-﻿
+﻿@using EntitiyLayer.Concrete
+@model Business
 @{
-    ViewBag.Title = "YeniHizmet";
+    ViewBag.Title = "GuncelleHizmet";
     Layout = "~/Views/Shared/AdminLayout.cshtml";
 }
 
 <form class="form form-group" method="post">
+    @Html.BeginForm()
     <div>
         <label>Hizmet Adı</label>
         <input type="text" class="form-control" name="businessName" />
@@ -19,7 +21,6 @@
     </div>
     <br />
     <div>
-        <button class="btn btn-success">Yeni Hizmet Ekle</button>
+        <button class="btn btn-success">Değişiklikleri Kaydet</button>
     </div>
 </form>
-

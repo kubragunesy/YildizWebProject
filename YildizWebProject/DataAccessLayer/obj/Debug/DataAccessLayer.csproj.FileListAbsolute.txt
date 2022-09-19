@@ -9,9 +9,9 @@ C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\DataAccessLayer\bin\Debug\En
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\DataAccessLayer\bin\Debug\EntityFramework.xml
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig16.resources
+C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.GenerateResource.cache
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
-C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig10.resources
-C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.GenerateResource.cache
