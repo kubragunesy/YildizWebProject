@@ -28,5 +28,25 @@ namespace YildizWebProject.Controllers
             mediaManager.Insert(media);
             return RedirectToAction("Index");
         }
+        public ActionResult SilMedia(int id)
+        {
+            var media = mediaManager.Get(id);
+            media.statu = false;
+            mediaManager.Update(media);
+            return RedirectToAction("Index");
+        }
+        [HttpGet]
+        public ActionResult GuncelleMedia(int id)
+        {
+            var guncelle=mediaManager.Get(id);
+            return View(guncelle);
+        }
+        [HttpPost]
+        public ActionResult GuncelleMedia(Media media)
+        {
+            mediaManager.Update(media);
+            return RedirectToAction("Index");
+        }
+
     }
 }

@@ -2064,6 +2064,9 @@
     <Content Include="Views\Media\YeniMedia.cshtml" />
     <Content Include="Views\Project\YeniProje.cshtml" />
     <Content Include="Views\Business\GuncelleHizmet.cshtml" />
+    <Content Include="Views\Contact\GuncelleIletisim.cshtml" />
+    <Content Include="Views\Media\GuncelleMedia.cshtml" />
+    <Content Include="Views\Project\GuncelleProje.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

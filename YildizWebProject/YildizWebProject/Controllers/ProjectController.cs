@@ -29,5 +29,24 @@ namespace YildizWebProject.Controllers
             projectManager.Insert(project);
             return RedirectToAction("Index");
         }
+        public ActionResult SilProje(int id)
+        {
+            var project = projectManager.Get(id);
+            project.statu = false;
+            projectManager.Update(project);
+            return View(project);
+        }
+        [HttpGet]
+        public ActionResult GuncelleProje (int id)
+        {
+            var guncelle=projectManager.Get(id);
+            return View(guncelle);
+        }
+        [HttpPost]
+        public ActionResult GuncelleProje(Project project)
+        {
+            projectManager.Update(project);
+            return RedirectToAction("Index");
+        }
     }
 }

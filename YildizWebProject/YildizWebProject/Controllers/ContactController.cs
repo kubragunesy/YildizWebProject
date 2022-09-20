@@ -31,5 +31,26 @@ namespace YildizWebProject.Controllers
             contactManager.Insert(contact);
             return RedirectToAction("Index");
         }
+        public ActionResult SilIletisim(int id)
+        {
+            var iletisim= contactManager.Get(id);
+            iletisim.statu = false;
+            contactManager.Update(iletisim);
+            return RedirectToAction("Index");
+        }
+        [HttpGet]
+        public ActionResult GuncelleIletisim(int id)
+        {
+            var guncelle= contactManager.Get(id);
+            return View(guncelle);
+        }
+        [HttpPost]
+        public ActionResult GuncelleIletisim(Contact contact)
+        {
+            contactManager.Update(contact);
+            return RedirectToAction("Index");
+        }
+
+
     }
 }
