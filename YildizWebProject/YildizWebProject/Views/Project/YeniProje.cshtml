@@ -11,7 +11,7 @@
 <div class="container-fluid">
 
 
-    @using (Html.BeginForm("GuncelleProje", "Project", FormMethod.Post, new
+    @using (Html.BeginForm("YeniProje", "Project", FormMethod.Post, new
     { @class = "form-group" }))
     {
         @Html.HiddenFor(x => x.projectId)
@@ -19,29 +19,34 @@
         <br />
         @Html.TextBoxFor(x => x.projectName, new { @class = "form-control" })
         <div id="projectName" class="validation-container">
-            @*@Html.ValidationMessageFor(x => x.businessName)*@
+            @Html.ValidationMessageFor(x => x.projectName,null, new {@class="text-danger"})
         </div>
         <br />
         @Html.Label("Proje Açıklama")
         <br />
         @Html.TextBoxFor(x => x.projectDescription, new { @class = "form-control" })
         <div id="projectDescription" class="validation-container">
-            @*@Html.ValidationMessageFor(x => x.businessName)*@
+            @Html.ValidationMessageFor(x => x.projectDescription, null, new {@class="text-danger"})
         </div>
         <br />
         @Html.Label("Medya Id")
         <br />
         @Html.TextBoxFor(x => x.mediaId, new { @class = "form-control" })
         <div id="mediaId" class="validation-container">
-            @*@Html.ValidationMessageFor(x => x.businessName)*@
+           @Html.ValidationMessageFor(x => x.mediaId, null, new {@class="text-danger"})
         </div>
         <br />
         @Html.Label("Statü")
         <br />
-        @Html.TextBoxFor(x => x.statu, new { @class = "form-control" })
-        <div id="statu" class="validation-container">
-            @*@Html.ValidationMessageFor(x => x.businessDescription)*@
-        </div>
+        <!--@Html.TextBoxFor(x => x.statu, new { @class = "form-control" })
+        <div id="statu" class="validation-container">-->
+        @*@Html.ValidationMessageFor(x => x.businessDescription)*@
+        <!--</div>
+        <br />-->
+        <select class="form-control" name="statu">
+            <option value="true">Aktif</option>
+            <option value="false">Pasif</option>
+        </select>
         <br />
         <input type="submit" value="Değişiklikleri Kaydet" class="form-control bg-success text-white" />
     }

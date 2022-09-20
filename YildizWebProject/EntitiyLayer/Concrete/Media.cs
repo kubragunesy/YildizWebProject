@@ -12,6 +12,7 @@ namespace EntitiyLayer.Concrete
         [Key]
         public int mediaId { get; set; }
         public string mediaName { get; set; }
+        public string mediaUrl { get; set; }
         public bool statu { get; set; }
         public ICollection<Project> projects { get; set; }
         

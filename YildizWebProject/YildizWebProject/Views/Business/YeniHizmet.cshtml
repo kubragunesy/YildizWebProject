@@ -20,26 +20,27 @@
         <br />
         @Html.TextBoxFor(x => x.businessName, new { @class = "form-control" })
         <div id="businessName" class="validation-container">
-            @*@Html.ValidationMessageFor(x => x.businessName)*@
+            @Html.ValidationMessageFor(x => x.businessName, null, new { @class = "text-danger" })
         </div>
         <br />
-
         @Html.Label("Hizmet Açıklaması")
         <br />
         @Html.TextBoxFor(x => x.businessDescription, new { @class = "form-control" })
         <div id="businessDescription" class="validation-container">
-            @*@Html.ValidationMessageFor(x => x.businessDescription)*@
+            @Html.ValidationMessageFor(x => x.businessDescription, null, new { @class = "text-danger" })
         </div>
         <br />
-
         @Html.Label("Statu")
         <br />
-        @Html.TextBoxFor(x => x.statu, new { @class = "form-control" })
+        @*@Html.TextBoxFor(x => x.statu, new { @class = "form-control" })*@
         <div id="statu" class="validation-container">
             @*@Html.ValidationMessageFor(x => x.statu)*@
         </div>
+        <select class="form-control" name="statu">
+            <option value="true">Aktif</option>
+            <option value="false">Pasif</option>
+        </select>
         <br />
-
         <input type="submit" value="Ekle" class="form-control bg-success text-white" />
     }
 

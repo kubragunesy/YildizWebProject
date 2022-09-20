@@ -2,6 +2,8 @@
 using DataAccessLayer.EntityFramework;
 using System.Web.Mvc;
 using EntitiyLayer.Concrete;
+using BusinessLayer.Validations;
+using FluentValidation;
 
 namespace YildizWebProject.Controllers
 {
@@ -9,6 +11,7 @@ namespace YildizWebProject.Controllers
     {
         // GET: Business
         BusinessManager businessManager = new BusinessManager(new EfBusinessDal());
+        BusinessValidation businessValidation = new BusinessValidation();
         public ActionResult Index()
         {
             var degerler = businessManager.GetAll();
@@ -23,8 +26,20 @@ namespace YildizWebProject.Controllers
         [HttpPost]
         public ActionResult YeniHizmet(Business business)
         {
-            businessManager.Insert(business);
-            return RedirectToAction("Index");
+            var sonuc = businessValidation.Validate(business);
+            if (sonuc.IsValid)
+            {
+                businessManager.Insert(business);
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                foreach (var item in sonuc.Errors)
+                {
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                }
+            }
+            return View();
         }
         public ActionResult SilHizmet(int id)
         {

@@ -1,4 +1,5 @@
 ﻿using BusinessLayer.Concrete;
+using BusinessLayer.Validations;
 using DataAccessLayer.EntityFramework;
 using EntitiyLayer.Concrete;
 using System;
@@ -13,6 +14,7 @@ namespace YildizWebProject.Controllers
     {
         // GET: Media
         MediaManager mediaManager = new MediaManager(new EfMediaDal());
+        MediaValidation mediaValidation = new MediaValidation();
         public ActionResult Index()
         {
             var degerler = mediaManager.GetAll();
@@ -23,10 +25,24 @@ namespace YildizWebProject.Controllers
         {
             return View();
         }
+        [HttpPost]
         public ActionResult YeniMedia(Media media)
         {
-            mediaManager.Insert(media);
-            return RedirectToAction("Index");
+            var sonuc = mediaValidation.Validate(media);
+            if (sonuc.IsValid)
+            {
+                mediaManager.Insert(media);
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                foreach (var item in sonuc.Errors)
+                {
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                }
+            }
+            return View();
+            
         }
         public ActionResult SilMedia(int id)
         {

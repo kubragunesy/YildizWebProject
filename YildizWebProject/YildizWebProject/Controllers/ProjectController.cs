@@ -1,4 +1,5 @@
 ﻿using BusinessLayer.Concrete;
+using BusinessLayer.Validations;
 using DataAccessLayer.EntityFramework;
 using EntitiyLayer.Concrete;
 using System;
@@ -13,6 +14,7 @@ namespace YildizWebProject.Controllers
     {
         // GET: Project
         ProjectManager projectManager = new ProjectManager(new EfProjectDal());
+        ProjectValidation projectValidation = new ProjectValidation();
         public ActionResult Index()
         {
             var degerler = projectManager.GetAll();
@@ -26,8 +28,20 @@ namespace YildizWebProject.Controllers
         [HttpPost]
         public ActionResult YeniProje(Project project)
         {
-            projectManager.Insert(project);
-            return RedirectToAction("Index");
+            var sonuc = projectValidation.Validate(project);
+            if (sonuc.IsValid)
+            {
+                projectManager.Insert(project);
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                foreach (var item in sonuc.Errors)
+                {
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                }
+            }
+            return View();
         }
         public ActionResult SilProje(int id)
         {

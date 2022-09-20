@@ -14,7 +14,7 @@
     @using (Html.BeginForm("GuncelleHizmet", "Business", FormMethod.Post, new
     { @class = "form-group" }))
     {
-        @Html.HiddenFor(x=>x.businessId)
+        @Html.HiddenFor(x => x.businessId)
         @Html.Label("Hizmet Adı")
         <br />
         @Html.TextBoxFor(x => x.businessName, new { @class = "form-control" })
@@ -31,12 +31,16 @@
         </div>
         <br />
 
-        @Html.Label("Statu")
+        @Html.Label("Statü")
         <br />
-        @Html.TextBoxFor(x => x.statu, new { @class = "form-control" })
+        @*@Html.TextBoxFor(x => x.statu, new { @class = "form-control" })*@
         <div id="statu" class="validation-container">
             @*@Html.ValidationMessageFor(x => x.statu)*@
         </div>
+        <select class="form-control" name="statu">
+            <option value="true">Aktif</option>
+            <option value="false">Pasif</option>
+        </select>
         <br />
 
         <input type="submit" value="Değişiklikleri Kaydet" class="form-control bg-success text-white" />

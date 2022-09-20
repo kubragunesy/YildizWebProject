@@ -89,3 +89,9 @@ C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\obj\Debug\Y
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\obj\Debug\YildizWebProject.csproj.CopyComplete
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\obj\Debug\YildizWebProject.dll
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\obj\Debug\YildizWebProject.pdb
+C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\FluentValidation.dll
+C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\FluentValidation.xml
+C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\System.Threading.Tasks.Extensions.xml

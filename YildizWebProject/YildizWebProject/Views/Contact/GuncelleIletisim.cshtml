@@ -52,11 +52,15 @@
         </div>
         <br />
         @Html.Label("Statü")
-        <br />
-        @Html.TextBoxFor(x => x.statu, new { @class = "form-control" })
-        <div id="statu" class="validation-container">
+        <!--@Html.TextBoxFor(x => x.statu, new { @class = "form-control" })
+        <div id="statu" class="validation-container">-->
             @*@Html.ValidationMessageFor(x => x.statu)*@
-        </div>
+        <!--</div>-->
+        <br />
+        <select class="form-control" name="statu">
+            <option value="true">Aktif</option>
+            <option value="false">Pasif</option>
+        </select>
         <br />
 
         <input type="submit" value="Değişiklikleri Kaydet" class="form-control bg-success text-white" />
