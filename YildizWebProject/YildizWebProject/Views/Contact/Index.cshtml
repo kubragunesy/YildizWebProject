@@ -4,6 +4,15 @@
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/AdminLayout.cshtml";
 }
+@using (Html.BeginForm("Index", "Contact", FormMethod.Get))
+{
+    <p>
+        <b>Aranacak Müşteri Adı: </b>@Html.TextBox("p")
+        <input type="submit" value="Ara" />
+    </p>
+}
+
+
 <h2 class="text-center p-2">İletişim</h2>
 <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
       rel="stylesheet">
@@ -48,7 +57,8 @@
             <td>@item.customerMessage</td>
             <td>@item.statu</td>
             <td>
-            <button type="button" class="btn btn-danger text-white" data-bs-whatever="@item.customerId" data-bs-toggle="modal" data-bs-target="#silModal">Sil</button></td>
+                <button type="button" class="btn btn-danger text-white" data-bs-whatever="@item.customerId" data-bs-toggle="modal" data-bs-target="#silModal">Sil</button>
+            </td>
             @*<td><a class="btn btn-primary" href="~/Contact/GuncelleIletisim/@item.customerId">Güncelle</a></td>*@
         </tr>
     }

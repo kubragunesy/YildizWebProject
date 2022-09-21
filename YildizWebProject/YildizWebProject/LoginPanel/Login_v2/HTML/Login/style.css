@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+body,html{
+    background-color: #1abc9b;
+    text-align: center;
+    align-items: center;
+    flex: auto;
+    font-family: 'Comfortaa', cursive;
+    display: grid;
+    height: 100%;
+    place-items: center;
+    
+}
+.container{
+    max-width: 440px;
+    padding:0 20px;
+    margin:170px;
+}
+.wrapper{
+    width: 100% px;
+    background: white;
+    border-radius: 6px;
+}
+
+.wrapper .title{
+    height: 100px;
+    background-color: #15a185;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    line-height: 80px;
+    padding-left: 80px;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    border-radius: 5px 5px 0 0 ;
+}
+
+.wrapper .row input{
+    height: 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    color: gray;
+    
+}
+.wrapper form .pass{
+     
+    color: #95b0a9;
+    font-size: 13px;
+    float: left;
+    margin-right: 25px;
+    text-decoration:none;
+    color: #16a085;
+    padding-top: 10px;
+}
+.wrapper form .pass a{
+    color: #16a085;
+    text-decoration: none;
+    
+}
+.wrapper form .row .signup-link{
+    padding-top: 35px;
+    font-size: 14px;
+    
+
+}
+.wrapper form .row .signup-link a{
+    text-decoration: none;
+    color: #16a085;
+}
+.wrapper form{
+    padding: 30px 20px 30px 20px;
+    font-size: 12px;
+}
+.wrapper form .row{
+    margin-bottom: 15px;
+    height: 45px;
+    position: relative;
+}
+.wrapper form .row input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding-left: 60px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    font-size: 16px;
+    transition: all 0.3ms ease;
+
+}
+
+.wrapper form .row i{
+    position: absolute;
+    width: 47px;
+    height: 100%;
+    color: #fff;
+    background-color: #16a085;
+    font-size: 18px;
+    border: 1px solid #16a085;
+    border-radius: 5px 0 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;   
+}
+.wrapper form .row .submit{
+    font-size: 100px;
+    float: left;
+    
+}
+
+.wrapper form .button input{
+    background-color: #16a085;
+    color: white;
+    padding-left: 0px;
+    font-size: 18px;
+    
+}
+
+.wrapper .row input:focus{
+    border-color: gray;
+    box-shadow: inset 0 0 2px 2px;
+}

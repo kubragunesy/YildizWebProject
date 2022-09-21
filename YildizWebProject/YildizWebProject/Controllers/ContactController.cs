@@ -7,8 +7,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using PagedList;
-
-
+using DataAccessLayer.Concrete;
 
 namespace YildizWebProject.Controllers
 {
@@ -16,10 +15,17 @@ namespace YildizWebProject.Controllers
     {
         // GET: Contact
        ContactManager contactManager = new ContactManager(new EfContactDal());
-        public ActionResult Index(int p = 1)
+        Context context = new Context();
+        public ActionResult Index(string p)
         {
-            var degerler = contactManager.GetAll();
-            return View(degerler);
+            var degerler = from d in context.Contacts select d;
+            if (!string.IsNullOrEmpty(p))
+            {
+                degerler = degerler.Where(m => m.customerName.Contains(p));
+            }
+            return View(degerler.ToList());
+            //var degerler = contactManager.GetAll();
+            //return View(degerler);
         }
         [HttpGet]
         public ActionResult Yeniİletisim()
