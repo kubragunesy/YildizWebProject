@@ -1,5 +1,8 @@
 ﻿@using EntitiyLayer.Concrete;
-@model List<Project>
+@*@model List<Project>*@
+@model PagedList.IPagedList<Project>
+@using PagedList;
+@using PagedList.Mvc
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/AdminLayout.cshtml";
@@ -52,6 +55,11 @@
         </tr>
     }
 </table>
+@Html.PagedListPager((IPagedList)Model, m => Url.Action("Index", new { m }), new PagedListRenderOptions
+{
+    LiElementClasses = new List<string>
+    {"page-link"}
+})
 @*<button class="btn btn-success">Yeni Proje Ekle</button>*@
 <a href="~/Project/YeniProje/" class="btn btn-success">YENİ PROJE EKLE</a>
 

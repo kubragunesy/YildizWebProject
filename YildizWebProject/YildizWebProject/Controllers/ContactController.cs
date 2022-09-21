@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using PagedList;
 
 
 
@@ -15,7 +16,7 @@ namespace YildizWebProject.Controllers
     {
         // GET: Contact
        ContactManager contactManager = new ContactManager(new EfContactDal());
-        public ActionResult Index()
+        public ActionResult Index(int p = 1)
         {
             var degerler = contactManager.GetAll();
             return View(degerler);

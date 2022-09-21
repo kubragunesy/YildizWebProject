@@ -56,9 +56,14 @@ C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\DataAcc
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\EntitiyLayer.dll
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\EntityFramework.dll
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\EntityFramework.SqlServer.dll
+C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\FluentValidation.dll
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\Newtonsoft.Json.dll
+C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\PagedList.dll
+C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\PagedList.Mvc.dll
+C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\System.Threading.Tasks.Extensions.dll
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\System.Web.Helpers.dll
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\System.Web.Mvc.dll
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\System.Web.Optimization.dll
@@ -74,6 +79,11 @@ C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\Entitiy
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\EntitiyLayer.dll.config
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\EntityFramework.xml
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\EntityFramework.SqlServer.xml
+C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\FluentValidation.xml
+C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\PagedList.xml
+C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\PagedList.Mvc.xml
+C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\System.Threading.Tasks.Extensions.xml
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\System.Web.Helpers.xml
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\System.Web.Mvc.xml
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\System.Web.Optimization.xml
@@ -89,9 +99,3 @@ C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\obj\Debug\Y
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\obj\Debug\YildizWebProject.csproj.CopyComplete
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\obj\Debug\YildizWebProject.dll
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\obj\Debug\YildizWebProject.pdb
-C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\FluentValidation.dll
-C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\System.Threading.Tasks.Extensions.dll
-C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\FluentValidation.xml
-C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\System.Runtime.CompilerServices.Unsafe.xml
-C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\YildizWebProject\bin\System.Threading.Tasks.Extensions.xml

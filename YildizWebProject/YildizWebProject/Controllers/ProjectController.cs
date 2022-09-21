@@ -7,6 +7,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using PagedList;
+using PagedList.Mvc;
 
 namespace YildizWebProject.Controllers
 {
@@ -15,9 +17,10 @@ namespace YildizWebProject.Controllers
         // GET: Project
         ProjectManager projectManager = new ProjectManager(new EfProjectDal());
         ProjectValidation projectValidation = new ProjectValidation();
-        public ActionResult Index()
+        public ActionResult Index(int m = 1)
         {
-            var degerler = projectManager.GetAll();
+            //var degerler = projectManager.GetAll();
+            var degerler = projectManager.GetAll().ToPagedList(m, 5);
             return View(degerler);
         }
         [HttpGet]

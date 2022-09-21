@@ -10,3 +10,7 @@ C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\EntitiyLayer\obj\Debug\Entit
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\EntitiyLayer\obj\Debug\EntitiyLayer.csproj.CopyComplete
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\EntitiyLayer\obj\Debug\EntitiyLayer.dll
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\EntitiyLayer\obj\Debug\EntitiyLayer.pdb
+C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\EntitiyLayer\bin\Debug\PagedList.dll
+C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\EntitiyLayer\bin\Debug\PagedList.Mvc.dll
+C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\EntitiyLayer\bin\Debug\PagedList.xml
+C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\EntitiyLayer\bin\Debug\PagedList.Mvc.xml

@@ -4,6 +4,8 @@ using System.Web.Mvc;
 using EntitiyLayer.Concrete;
 using BusinessLayer.Validations;
 using FluentValidation;
+using PagedList;
+using PagedList.Mvc;
 
 namespace YildizWebProject.Controllers
 {
@@ -12,15 +14,15 @@ namespace YildizWebProject.Controllers
         // GET: Business
         BusinessManager businessManager = new BusinessManager(new EfBusinessDal());
         BusinessValidation businessValidation = new BusinessValidation();
-        public ActionResult Index()
+        public ActionResult Index(int p = 1)
         {
-            var degerler = businessManager.GetAll();
+            //var degerler = businessManager.GetAll();
+            var degerler = businessManager.GetAll().ToPagedList(p, 5);
             return View(degerler);
         }
         [HttpGet]
         public ActionResult YeniHizmet()
         {
-            
             return View();
         }
         [HttpPost]

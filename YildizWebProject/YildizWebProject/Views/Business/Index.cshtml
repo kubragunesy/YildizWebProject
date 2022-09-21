@@ -1,5 +1,8 @@
-﻿@using EntitiyLayer.Concrete;
-@model List<Business>
+﻿@using EntitiyLayer.Concrete
+@model PagedList.IPagedList<Business>
+@using PagedList;
+@using PagedList.Mvc;
+
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/AdminLayout.cshtml";
@@ -23,19 +26,20 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hayır</button>
                 <a href="" class="btn btn-success">Evet</a>
-
             </div>
         </div>
     </div>
 </div>
 
-<table class="table">
-    <tr>
-        <th>Hizmet ID</th>
-        <th>Hizmet Adı</th>
-        <th>Hizmet Açıklama</th>
-        <th>Statü</th>
-    </tr>
+<table id="tbl2" class="table">
+    <thead>
+        <tr>
+            <th>Hizmet ID</th>
+            <th>Hizmet Adı</th>
+            <th>Hizmet Açıklama</th>
+            <th>Statü</th>
+        </tr>
+    </thead>
     @foreach (var item in Model)
     {
         <tr>
@@ -50,6 +54,11 @@
         </tr>
     }
 </table>
+@Html.PagedListPager((IPagedList)Model, p => Url.Action("Index", new { p }), new PagedListRenderOptions
+{
+    LiElementClasses = new List<string> 
+    {"page-link"}
+})
 <a href="~/Business/YeniHizmet" class="btn btn-success">YENİ HİZMET EKLE</a>
 
 

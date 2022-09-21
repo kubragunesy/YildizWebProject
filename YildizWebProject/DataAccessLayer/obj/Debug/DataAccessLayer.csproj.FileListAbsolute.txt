@@ -15,3 +15,7 @@ C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\DataAccessLayer\obj\Debug\Da
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\DataAccessLayer\bin\Debug\PagedList.dll
+C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\DataAccessLayer\bin\Debug\PagedList.Mvc.dll
+C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\DataAccessLayer\bin\Debug\PagedList.xml
+C:\Users\GUNES\Documents\Kübra-C#\YildizWebProject\DataAccessLayer\bin\Debug\PagedList.Mvc.xml

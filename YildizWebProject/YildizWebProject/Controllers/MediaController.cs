@@ -7,6 +7,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using PagedList;
+using PagedList.Mvc;
 
 namespace YildizWebProject.Controllers
 {
@@ -15,9 +17,10 @@ namespace YildizWebProject.Controllers
         // GET: Media
         MediaManager mediaManager = new MediaManager(new EfMediaDal());
         MediaValidation mediaValidation = new MediaValidation();
-        public ActionResult Index()
+        public ActionResult Index(int s = 1)
         {
-            var degerler = mediaManager.GetAll();
+            //var degerler = mediaManager.GetAll();
+            var degerler = mediaManager.GetAll().ToPagedList(s, 5);
             return View(degerler);
         }
         [HttpGet]
