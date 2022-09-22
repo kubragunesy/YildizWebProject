@@ -2283,7 +2283,7 @@
     <Content Include="Views\Contact\GuncelleIletisim.cshtml" />
     <Content Include="Views\Media\GuncelleMedia.cshtml" />
     <Content Include="Views\Project\GuncelleProje.cshtml" />
-    <Content Include="Views\Admin\Index.cshtml" />
+    <Content Include="Views\Admin\LoginPanel.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

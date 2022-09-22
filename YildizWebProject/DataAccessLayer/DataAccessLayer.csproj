@@ -68,9 +68,9 @@
     <Compile Include="EntityFramework\EfGenericDal.cs" />
     <Compile Include="EntityFramework\EfMediaDal.cs" />
     <Compile Include="EntityFramework\EfProjectDal.cs" />
-    <Compile Include="Migrations\202209192005208_mig16.cs" />
-    <Compile Include="Migrations\202209192005208_mig16.designer.cs">
-      <DependentUpon>202209192005208_mig16.cs</DependentUpon>
+    <Compile Include="Migrations\202209221639384_mig4.cs" />
+    <Compile Include="Migrations\202209221639384_mig4.designer.cs">
+      <DependentUpon>202209221639384_mig4.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -92,12 +92,12 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202209192005208_mig16.resx">
-      <DependentUpon>202209192005208_mig16.cs</DependentUpon>
-    </EmbeddedResource>
+    <Content Include="Content\PagedList.css" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\PagedList.css" />
+    <EmbeddedResource Include="Migrations\202209221639384_mig4.resx">
+      <DependentUpon>202209221639384_mig4.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

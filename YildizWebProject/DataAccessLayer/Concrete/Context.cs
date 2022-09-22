@@ -14,5 +14,6 @@ namespace DataAccessLayer.Concrete
         public DbSet <Contact> Contacts { get; set; }
         public DbSet <Media> Medias { get; set; }
         public DbSet <Project> Projects { get; set; }
+        public DbSet <Admin> Admins { get; set; }
     }
 }
