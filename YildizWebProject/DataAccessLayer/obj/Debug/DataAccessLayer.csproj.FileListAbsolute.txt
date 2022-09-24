@@ -34,7 +34,7 @@ C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\DataAccessLaye
 C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\DataAccessLayer\bin\Debug\PagedList.xml
 C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\DataAccessLayer\bin\Debug\PagedList.Mvc.xml
 C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
-C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig4.resources
+C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\DataAccessLayer\obj\Debug\DataAccessLayer.Migrations.mig5.resources
 C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.GenerateResource.cache
 C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
 C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete

@@ -144,6 +144,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\BusinessController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
@@ -2284,6 +2285,9 @@
     <Content Include="Views\Media\GuncelleMedia.cshtml" />
     <Content Include="Views\Project\GuncelleProje.cshtml" />
     <Content Include="Views\Admin\LoginPanel.cshtml" />
+    <Content Include="Views\About\Index.cshtml" />
+    <Content Include="Views\About\YeniAbout.cshtml" />
+    <Content Include="Views\About\GuncelleAbout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

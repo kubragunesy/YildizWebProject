@@ -65,5 +65,6 @@ namespace YildizWebProject.Controllers
             projectManager.Update(project);
             return RedirectToAction("Index");
         }
+        
     }
 }
