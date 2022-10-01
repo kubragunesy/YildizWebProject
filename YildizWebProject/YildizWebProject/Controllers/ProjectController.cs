@@ -51,7 +51,7 @@ namespace YildizWebProject.Controllers
             var project = projectManager.Get(id);
             project.statu = false;
             projectManager.Update(project);
-            return View(project);
+            return RedirectToAction("Index");
         }
         [HttpGet]
         public ActionResult GuncelleProje (int id)

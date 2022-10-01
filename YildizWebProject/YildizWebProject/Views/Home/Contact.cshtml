@@ -1,17 +1,123 @@
 ﻿@{
     ViewBag.Title = "Contact";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<address>
-    <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>
+<link rel="stylesheet" href="css/style.css">
+
+<link href="~/Yildizİnsaat/iletisim/css/style.css" rel="stylesheet" />
+
+<section class="ftco-section ">
+    <div class="container ">
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <div class="dbox w-100 text-center">
+                    <div class="icon d-flex align-items-center justify-content-center bg-dark">
+                        <span class="fa fa-map-marker"></span>
+                    </div>
+                    <div class="text">
+                        <p><span>Adres:</span> Kartal / İstanbul</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="dbox w-100 text-center">
+                    <div class="icon d-flex align-items-center justify-content-center bg-dark">
+                        <span class="fa fa-phone"></span>
+                    </div>
+                    <div class="text">
+                        <p><span>Telefon:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="dbox w-100 text-center">
+                    <div class="icon d-flex align-items-center justify-content-center bg-dark">
+                        <span class="fa fa-paper-plane"></span>
+                    </div>
+                    <div class="text">
+                        <p><span>E-mail:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="dbox w-100 text-center">
+                    <div class="icon d-flex align-items-center justify-content-center bg-dark">
+                        <span class="fa fa-instagram"></span>
+                    </div>
+                    <div class="text">
+                        <p><span>Instragram</span> <a href="#">yoursite.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <div class="wrapper">
+                    <div class="row no-gutters mb-5">
+                        <div class="col-md-7">
+                            <div class="contact-wrap w-100 p-md-5 p-4">
+                                <h3 class="mb-4 text-center">Bize Yazın</h3>
+                                <div id="form-message-warning" class="mb-4"></div>
+                                <div id="form-message-success" class="mb-4">
+                                    Mesajın gönderildi, teşekkürler!
+                                </div>
+                                <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+
+                                                <input type="text" class="form-control" name="name" id="name" placeholder="İsim">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+
+                                                <input type="text" class="form-control" name="name" id="name" placeholder="Soyisim">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+
+                                                <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+
+                                                <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Mesaj"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="submit" value="Gönder" class="btn btn-dark ">
+                                                <div class="submitting"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-5 d-flex align-items-stretch">
+                            <div id="map">
+
+                                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48236.45682784426!2d29.161724524256957!3d40.920601153138726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caba0b766c40b7%3A0x56f40de577c67da3!2sProf.%20Dr.%20T%C3%BCrkan%20Saylan%20K%C3%BClt%C3%BCr%20Merkezi!5e0!3m2!1str!2str!4v1664452644058!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="~/Yildizİnsaat/iletisim/js/jquery.min.js"></script>
+<script src="~/Yildizİnsaat/iletisim/js/popper.js"></script>
+<script src="~/Yildizİnsaat/iletisim/js/bootstrap.min.js"></script>
+<script src="~/Yildizİnsaat/iletisim/js/jquery.validate.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+<script src="~/Yildizİnsaat/iletisim/js/google-map.js"></script>
+<script src="~/Yildizİnsaat/iletisim/js/main.js"></script>
