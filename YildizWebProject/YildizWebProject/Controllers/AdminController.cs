@@ -9,6 +9,7 @@ using System.Web.Security;
 
 namespace YildizWebProject.Controllers
 {
+    [AllowAnonymous]
     public class AdminController : Controller
     {
         // GET: Admin
@@ -25,6 +26,7 @@ namespace YildizWebProject.Controllers
             if (sonuc != null)
             {
                 FormsAuthentication.SetAuthCookie(sonuc.adminUserName, false);
+                Session["adminUserName"]=admin.adminUserName;
                 return RedirectToAction("Index", "Business");
             }
             else
@@ -32,6 +34,11 @@ namespace YildizWebProject.Controllers
                 return RedirectToAction("LoginPanel");
             }
             
+        }
+        public ActionResult LogOut()
+        {
+            FormsAuthentication.SignOut();
+            return RedirectToAction("LoginPanel");
         }
     }
 }
