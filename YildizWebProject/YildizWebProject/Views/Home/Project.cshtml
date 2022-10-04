@@ -1,4 +1,5 @@
-﻿
+﻿@using EntitiyLayer.Concrete
+@model List<Project>
 @{
     ViewBag.Title = "Project";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -10,35 +11,39 @@
 <link rel="stylesheet" href="~/Yildizİnsaat/Projelerimiz/proje.css" />
 
 <div class="row row-cols-1 row-cols-md-3 g-4 m-5 text-center">
-    <div class="col">
-        <div class="card h-100">
-            <img src="https://images.odamax.com/img/1024x768/odamax/image/upload/pt2dxy1fjn2heez7iye4.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title ">Marmaris</h5>
-                <p class="card-text">Tamamlanmış proje</p>
-            </div>
+    @foreach (var item in Model)
+    {
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://images.odamax.com/img/1024x768/odamax/image/upload/pt2dxy1fjn2heez7iye4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title ">@item.projectName</h5>
+                    <p class="card-text">@item.projectDescription</p>
+                </div>
 
-        </div>
-    </div>
-    <div class="col">
-        <div class="card h-100">
-            <img src="https://www.hekimyapi.com/img/2014/09/apartman-ankara-02.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Çeşme</h5>
-                <p class="card-text">Tamamlanmış proje</p>
             </div>
-
         </div>
-    </div>
-    <div class="col">
-        <div class="card h-100">
-            <img src="https://villahanem.com/uploads/0-villa-hanem-kiralik-villa-berlin-1_86.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Bodrum</h5>
-                <p class="card-text">Tamamlanmış proje</p>
+    }
+
+    @*<div class="col">
+            <div class="card h-100">
+                <img src="https://www.hekimyapi.com/img/2014/09/apartman-ankara-02.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Çeşme</h5>
+                    <p class="card-text">Tamamlanmış proje</p>
+                </div>
+
             </div>
-
         </div>
-    </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="https://villahanem.com/uploads/0-villa-hanem-kiralik-villa-berlin-1_86.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Bodrum</h5>
+                    <p class="card-text">Tamamlanmış proje</p>
+                </div>
+
+            </div>
+        </div>*@
 </div>
 

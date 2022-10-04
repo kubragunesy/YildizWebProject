@@ -1,11 +1,14 @@
 ﻿@{
     ViewBag.Title = "Contact";
 }
+
+@using EntitiyLayer.Concrete
+@model Contact
 <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<link rel="stylesheet" href="css/style.css">
+
 
 <link href="~/Yildizİnsaat/iletisim/css/style.css" rel="stylesheet" />
 
@@ -60,34 +63,42 @@
                         <div class="col-md-7">
                             <div class="contact-wrap w-100 p-md-5 p-4">
                                 <h3 class="mb-4 text-center">Bize Yazın</h3>
-                                <div id="form-message-warning" class="mb-4"></div>
-                                <div id="form-message-success" class="mb-4">
-                                    Mesajın gönderildi, teşekkürler!
+                                <div id="form-message-warning" class="mb-4">
+                                    @*@TempData["Message"]*@
                                 </div>
+                                @*<div id="form-message-success" class="mb-4">
+                                    @TempData["Message"]
+                                </div>*@
                                 <form method="POST" id="contactForm" name="contactForm" class="contactForm">
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
 
-                                                <input type="text" class="form-control" name="name" id="name" placeholder="İsim">
+                                                <input type="text" class="form-control" name="customerName" id="customerName" placeholder="İsim">
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
 
-                                                <input type="text" class="form-control" name="name" id="name" placeholder="Soyisim">
+                                                <input type="text" class="form-control" name="customerLastName" id="customerLastName" placeholder="Soyisim">
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
 
-                                                <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                                                <input type="email" class="form-control" name="customerMail" id="customerMail" placeholder="Email">
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
 
-                                                <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Mesaj"></textarea>
+                                                <input type="number" class="form-control" name="customerPhoneNumber" id="customerPhoneNumber" placeholder="Telefon">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+
+                                                <textarea name="customerMessage" class="form-control" id="customerMessage" cols="30" rows="4" placeholder="Mesaj"></textarea>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
@@ -114,10 +125,10 @@
     </div>
 </section>
 
-<script src="~/Yildizİnsaat/iletisim/js/jquery.min.js"></script>
+@*<script src="~/Yildizİnsaat/iletisim/js/jquery.min.js"></script>
 <script src="~/Yildizİnsaat/iletisim/js/popper.js"></script>
 <script src="~/Yildizİnsaat/iletisim/js/bootstrap.min.js"></script>
-<script src="~/Yildizİnsaat/iletisim/js/jquery.validate.min.js"></script>
+<script src="~/Yildizİnsaat/iletisim/js/jquery.validate.min.js"></script>*@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 <script src="~/Yildizİnsaat/iletisim/js/google-map.js"></script>
-<script src="~/Yildizİnsaat/iletisim/js/main.js"></script>
+@*<script src="~/Yildizİnsaat/iletisim/js/main.js"></script>*@

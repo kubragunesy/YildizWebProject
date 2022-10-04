@@ -1,7 +1,7 @@
 ﻿<?php
 
 // Replace this with your own email address
-$to = 'louiejiemahusay@gmail.com';
+$to = 'abdussamet66@gmail.com';
 
 function url(){
   return sprintf(
@@ -13,17 +13,18 @@ function url(){
 
 if($_POST) {
 
-   $name = trim(stripslashes($_POST['name']));
-   $email = trim(stripslashes($_POST['email']));
-   $subject = trim(stripslashes($_POST['subject']));
-   $contact_message = trim(stripslashes($_POST['message']));
+   $name = trim(stripslashes($_POST['customerName']));
+   $lastname = trim(stripslashes($_POST['customerLastName']));
+   $email = trim(stripslashes($_POST['customerMail']));
+   $subject = trim(stripslashes($_POST['customerPhoneNumber']));
+   $contact_message = trim(stripslashes($_POST['customerMessage']));
 
    
 	if ($subject == '') { $subject = "Contact Form Submission"; }
 
    // Set Message
    $message .= "Email from: " . $name . "<br />";
-	 $message .= "Email address: " . $email . "<br />";
+   $message .= "Email address: " . $email . "<br />";
    $message .= "Message: <br />";
    $message .= nl2br($contact_message);
    $message .= "<br /> ----- <br /> This email was sent from your site " . url() . " contact form. <br />";

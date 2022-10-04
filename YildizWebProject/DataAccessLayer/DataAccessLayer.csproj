@@ -59,6 +59,7 @@
   <ItemGroup>
     <Compile Include="Abstract\IAboutDal.cs" />
     <Compile Include="Abstract\IBusinessDal.cs" />
+    <Compile Include="Abstract\ICompanyInfoDal.cs" />
     <Compile Include="Abstract\IContactDal.cs" />
     <Compile Include="Abstract\IGenericDal.cs" />
     <Compile Include="Abstract\IMediaDal.cs" />
@@ -66,6 +67,7 @@
     <Compile Include="Concrete\Context.cs" />
     <Compile Include="Concrete\EntityFramework\EfAboutDal.cs" />
     <Compile Include="Concrete\EntityFramework\EfBusinessDal.cs" />
+    <Compile Include="Concrete\EntityFramework\EfCompanyInfoDal.cs" />
     <Compile Include="Concrete\EntityFramework\EfContactDal.cs" />
     <Compile Include="Concrete\EntityFramework\EfGenericDal.cs" />
     <Compile Include="Concrete\EntityFramework\EfMediaDal.cs" />
@@ -73,6 +75,10 @@
     <Compile Include="Migrations\202209241807439_mig5.cs" />
     <Compile Include="Migrations\202209241807439_mig5.designer.cs">
       <DependentUpon>202209241807439_mig5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202210041812104_mig4.cs" />
+    <Compile Include="Migrations\202210041812104_mig4.designer.cs">
+      <DependentUpon>202210041812104_mig4.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -97,6 +103,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202209241807439_mig5.resx">
       <DependentUpon>202209241807439_mig5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202210041812104_mig4.resx">
+      <DependentUpon>202210041812104_mig4.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

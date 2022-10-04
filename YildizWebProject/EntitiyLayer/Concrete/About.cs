@@ -10,8 +10,8 @@ namespace EntitiyLayer.Concrete
     public class About
     {
         [Key]
-        public int aboutId  { get; set; }
-        public string aboutName { get; set; }
-        public string aboutDescription { get; set; }
+        public int aboutId  { get; set; } 
+        public string aboutName { get; set; } 
+        public string aboutDescription { get; set; } 
     }
 }

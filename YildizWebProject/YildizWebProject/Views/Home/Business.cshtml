@@ -1,4 +1,5 @@
-﻿
+﻿@using EntitiyLayer.Concrete
+@model List<Business>
 @{
     ViewBag.Title = "Business";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -7,13 +8,7 @@
       rel="stylesheet"
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous" />
-
-
 <link rel="stylesheet" href="~/Yildizİnsaat/Hizmetlerimiz/hizmet.css" />
-
-
-
-
 <img src="~/Yildizİnsaat/Hizmetlerimiz/ab.jpg" class="img-fluid w-100" alt="...">
 
 <div class="container">
@@ -34,21 +29,26 @@
         </div>
     </div>
 </div>
+
 <div class="container" style="font-size: 20px;">
     <div class="accordion mb-5" id="accordionPanelsStayOpenExample">
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                <button class="accordion-button bg-secondary" type="button" data-bs-toggle="collapse" style="font-size: 22px;" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                    Proje Çizimi
-                </button>
-            </h2>
-            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-                <div class="accordion-body">
-                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        @foreach (var item in Model)
+        {
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button bg-secondary" type="button" data-bs-toggle="collapse" style="font-size: 22px;" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                        @item.businessName
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                        <strong>@item.businessDescription</strong> 
                 </div>
+                    </div>
             </div>
-        </div>
-        <div class="accordion-item">
+        }
+
+        @*<div class="accordion-item">
             <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
                 <button class="accordion-button collapsed" type="button" style="font-size: 22px;" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
                     Yalıtım
@@ -83,7 +83,8 @@
                     <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                 </div>
             </div>
-        </div>
+        </div>*@
+    </div>
     </div>
     </div>
 

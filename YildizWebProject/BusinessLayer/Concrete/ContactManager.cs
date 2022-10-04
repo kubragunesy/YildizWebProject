@@ -29,6 +29,7 @@ namespace BusinessLayer.Concrete
 
         public void Insert(Contact contact)
         {
+            contact.statu = true;
             _contactDal.Insert(contact);
         }
 

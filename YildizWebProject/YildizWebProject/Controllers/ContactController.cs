@@ -14,8 +14,9 @@ namespace YildizWebProject.Controllers
     public class ContactController : Controller
     {
         // GET: Contact
-       ContactManager contactManager = new ContactManager(new EfContactDal());
+        ContactManager contactManager = new ContactManager(new EfContactDal());
         Context context = new Context();
+        //aranacak müşteri
         public ActionResult Index(string p)
         {
             var degerler = from d in context.Contacts select d;
