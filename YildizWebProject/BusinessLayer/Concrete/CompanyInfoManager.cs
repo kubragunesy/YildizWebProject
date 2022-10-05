@@ -19,27 +19,27 @@ namespace BusinessLayer.Concrete
 
         public CompanyInfo Get(int id)
         {
-            throw new NotImplementedException();
+            return _companyInfoDal.GetById(x=>x.Id==id);
         }
 
         public List<CompanyInfo> GetAll()
         {
-            throw new NotImplementedException();
+            return _companyInfoDal.GetList();
         }
 
         public void Insert(CompanyInfo companyInfo)
         {
-            throw new NotImplementedException();
+            _companyInfoDal.Insert(companyInfo);
         }
 
         public void Remove(CompanyInfo companyInfo)
         {
-            throw new NotImplementedException();
+            _companyInfoDal.Remove(companyInfo);
         }
 
         public void Update(CompanyInfo companyInfo)
         {
-            throw new NotImplementedException();
+            _companyInfoDal.Update(companyInfo);
         }
     }
 }
