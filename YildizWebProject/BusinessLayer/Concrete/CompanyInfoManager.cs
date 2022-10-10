@@ -29,7 +29,11 @@ namespace BusinessLayer.Concrete
 
         public void Insert(CompanyInfo companyInfo)
         {
+<<<<<<< HEAD
            _companyInfoDal.Insert(companyInfo);
+=======
+            _companyInfoDal.Insert(companyInfo);
+>>>>>>> 4e0c6bad3e176ac282620790ddaa6ba8f7adfce3
         }
 
         public void Remove(CompanyInfo companyInfo)

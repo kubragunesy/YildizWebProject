@@ -20,7 +20,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                Seçili ögenin statüsü pasif olarak güncellenecek. Emin misiniz?
+                Seçili ögenin statüs pasif olarak güncellenecek. Emin misiniz?
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hayır</button>
@@ -32,10 +32,11 @@
 
 <table class="table">
     <tr>
-        <th> Proje ID</th>
-        <th> Proje Adı</th>
+        <th> # </th>
+        <th> Proje Ad</th>
         <th> Proje Açıklama</th>
-        <th> Medya ID</th>
+        <th> Medya Ad</th>
+       
         <th> Statü</th>
     </tr>
     @foreach (var item in Model)
@@ -44,7 +45,10 @@
             <td>@item.projectId</td>
             <td>@item.projectName</td>
             <td>@item.projectDescription</td>
-            <td>@item.mediaId</td>
+            <td>@item.media.mediaUrl</td>
+            <!--
+        bura medya gorselı gelse daha uygun
+    -->
             <td>@item.statu</td>
             <td>
                 <button type="button" class="btn btn-danger text-white" data-bs-whatever="@item.projectId" data-bs-toggle="modal" data-bs-target="#silModal">Sil</button>
