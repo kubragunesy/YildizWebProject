@@ -3,7 +3,7 @@
 }
 
 @using EntitiyLayer.Concrete
-@model Contact
+@model List<CompanyInfo>
 <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,46 +15,50 @@
 <section class="ftco-section ">
     <div class="container ">
         <div class="row mb-4">
-            <div class="col-md-3">
-                <div class="dbox w-100 text-center">
-                    <div class="icon d-flex align-items-center justify-content-center bg-dark">
-                        <span class="fa fa-map-marker"></span>
-                    </div>
-                    <div class="text">
-                        <p><span>Adres:</span> Kartal / İstanbul</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="dbox w-100 text-center">
-                    <div class="icon d-flex align-items-center justify-content-center bg-dark">
-                        <span class="fa fa-phone"></span>
-                    </div>
-                    <div class="text">
-                        <p><span>Telefon:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+            @foreach (var item in Model)
+            {
+                <div class="col-md-3">
+                    <div class="dbox w-100 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center bg-dark">
+                            <span class="@item.logo"></span>
+                        </div>
+                        <div class="text">
+                            <p><span>@item.name : </span>@item.description </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="dbox w-100 text-center">
-                    <div class="icon d-flex align-items-center justify-content-center bg-dark">
-                        <span class="fa fa-paper-plane"></span>
-                    </div>
-                    <div class="text">
-                        <p><span>E-mail:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="dbox w-100 text-center">
-                    <div class="icon d-flex align-items-center justify-content-center bg-dark">
-                        <span class="fa fa-instagram"></span>
-                    </div>
-                    <div class="text">
-                        <p><span>Instragram</span> <a href="#">yoursite.com</a></p>
+            }
+
+            @*<div class="col-md-3">
+                    <div class="dbox w-100 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center bg-dark">
+                            <span class="fa fa-phone"></span>
+                        </div>
+                        <div class="text">
+                            <p><span>Telefon:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+                        </div>
                     </div>
                 </div>
-            </div>
+                <div class="col-md-3">
+                    <div class="dbox w-100 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center bg-dark">
+                            <span class="fa fa-paper-plane"></span>
+                        </div>
+                        <div class="text">
+                            <p><span>E-mail:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="dbox w-100 text-center">
+                        <div class="icon d-flex align-items-center justify-content-center bg-dark">
+                            <span class="fa fa-instagram"></span>
+                        </div>
+                        <div class="text">
+                            <p><span>Instragram</span> <a href="#">yoursite.com</a></p>
+                        </div>
+                    </div>
+                </div>*@
         </div>
         <div class="row justify-content-center">
             <div class="col-md-12">
@@ -64,11 +68,11 @@
                             <div class="contact-wrap w-100 p-md-5 p-4">
                                 <h3 class="mb-4 text-center">Bize Yazın</h3>
                                 <div id="form-message-warning" class="mb-4">
-                                    @*@TempData["Message"]*@
+
                                 </div>
-                                @*<div id="form-message-success" class="mb-4">
-                                    @TempData["Message"]
-                                </div>*@
+                                <div id="form-message-success" class="mb-4">
+
+                                </div>
                                 <form method="POST" id="contactForm" name="contactForm" class="contactForm">
                                     <div class="row">
                                         <div class="col-md-6">
@@ -92,7 +96,7 @@
                                         <div class="col-md-12">
                                             <div class="form-group">
 
-                                                <input type="number" class="form-control" name="customerPhoneNumber" id="customerPhoneNumber" placeholder="Telefon">
+                                                <input type="tel" class="form-control" name="customerPhoneNumber" id="customerPhoneNumber" placeholder="Telefon">
                                             </div>
                                         </div>
                                         <div class="col-md-12">
@@ -103,7 +107,7 @@
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <input type="submit" value="Gönder" class="btn btn-dark ">
+                                                <input type="submit" onclick="gonder()" value="Gönder" class="btn btn-dark">
                                                 <div class="submitting"></div>
                                             </div>
                                         </div>
@@ -126,9 +130,19 @@
 </section>
 
 @*<script src="~/Yildizİnsaat/iletisim/js/jquery.min.js"></script>
-<script src="~/Yildizİnsaat/iletisim/js/popper.js"></script>
-<script src="~/Yildizİnsaat/iletisim/js/bootstrap.min.js"></script>
-<script src="~/Yildizİnsaat/iletisim/js/jquery.validate.min.js"></script>*@
+    <script src="~/Yildizİnsaat/iletisim/js/popper.js"></script>
+    <script src="~/Yildizİnsaat/iletisim/js/bootstrap.min.js"></script>
+    <script src="~/Yildizİnsaat/iletisim/js/jquery.validate.min.js"></script>*@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 <script src="~/Yildizİnsaat/iletisim/js/google-map.js"></script>
 @*<script src="~/Yildizİnsaat/iletisim/js/main.js"></script>*@
+
+
+
+<script>
+    function gonder() {
+        alert("Mesajınız başarı ile gönderildi. Sizinle en yakın zamanda iletişime geçeceğiz.");
+        /*document.querySelector('#form-message-success').innerHTML = "Mesajınız başarı ile gönderildi. Sizinle en yakın zamanda iletişime geçeceğiz.";*/
+    }
+    
+</script>    

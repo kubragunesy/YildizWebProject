@@ -1,4 +1,5 @@
 ﻿using BusinessLayer.Concrete;
+using DataAccessLayer.Concrete.EntityFramework;
 using DataAccessLayer.EntityFramework;
 using EntitiyLayer.Concrete;
 using System;
@@ -18,6 +19,8 @@ namespace YildizWebProject.Controllers
         ContactManager contactManager = new ContactManager(new EfContactDal());
         BusinessManager businessManager = new BusinessManager(new EfBusinessDal());
         ProjectManager projectManager = new ProjectManager(new EfProjectDal());
+        CompanyInfoManager companyInfoManager = new CompanyInfoManager(new EfCompanyInfoDal());
+
         public ActionResult Index()
         {
             return View();
@@ -30,8 +33,9 @@ namespace YildizWebProject.Controllers
         }
         [HttpGet]
         public ActionResult Contact()
-        {          
-            return View();
+        {
+            var list = companyInfoManager.GetAll();       
+            return View(list);
         }
         [HttpPost]
         public ActionResult Contact(Contact contact)
@@ -62,6 +66,7 @@ namespace YildizWebProject.Controllers
             //    TempData["Message"]="mail gonderılemedi "+ex.Message;
 
             //}
+            
             contactManager.Insert(contact);
             return RedirectToAction("Contact");
         }
