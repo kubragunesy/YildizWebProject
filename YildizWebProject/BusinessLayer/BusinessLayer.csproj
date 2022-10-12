@@ -60,17 +60,14 @@
     <Compile Include="Abstract\IBusinessService.cs" />
     <Compile Include="Abstract\ICompanyInfoService.cs" />
     <Compile Include="Abstract\IContactService.cs" />
-    <Compile Include="Abstract\IMediaService.cs" />
     <Compile Include="Abstract\IProjectService.cs" />
     <Compile Include="Concrete\AboutManager.cs" />
     <Compile Include="Concrete\BusinessManager.cs" />
     <Compile Include="Concrete\CompanyInfoManager.cs" />
     <Compile Include="Concrete\ContactManager.cs" />
-    <Compile Include="Concrete\MediaManager.cs" />
     <Compile Include="Concrete\ProjectManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Validations\BusinessValidation.cs" />
-    <Compile Include="Validations\MediaValidation.cs" />
     <Compile Include="Validations\ProjectValidation.cs" />
   </ItemGroup>
   <ItemGroup>

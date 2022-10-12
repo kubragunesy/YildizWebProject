@@ -29,11 +29,11 @@
             @Html.ValidationMessageFor(x => x.projectDescription, null, new {@class="text-danger"})
         </div>
         <br />
-        @Html.Label("Medya Id")
+        @Html.Label("Medya Url")
         <br />
-        @Html.TextBoxFor(x => x.mediaId, new { @class = "form-control" })
-        <div id="mediaId" class="validation-container">
-           @Html.ValidationMessageFor(x => x.mediaId, null, new {@class="text-danger"})
+        @Html.TextBoxFor(x => x.projectMediaUrl, new { @class = "form-control" })
+        <div id="projectMediaUrl" class="validation-container">
+           @Html.ValidationMessageFor(x => x.projectMediaUrl, null, new {@class="text-danger"})
         </div>
         <br />
         @Html.Label("Statü")

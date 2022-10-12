@@ -13,9 +13,9 @@ namespace EntitiyLayer.Concrete
         public int projectId { get; set; }
         public string projectName { get; set; }
         public string projectDescription { get; set; }
+        public string projectMediaUrl { get; set; }
         public bool statu { get; set; }
-        public int mediaId { get; set; }
-        public virtual Media media { get; set; }
+        
         
     }
 }

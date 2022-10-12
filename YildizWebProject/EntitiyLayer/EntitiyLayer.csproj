@@ -62,7 +62,6 @@
     <Compile Include="Concrete\CompanyInfo.cs" />
     <Compile Include="Concrete\Contact.cs" />
     <Compile Include="Concrete\About.cs" />
-    <Compile Include="Concrete\Media.cs" />
     <Compile Include="Concrete\Project.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

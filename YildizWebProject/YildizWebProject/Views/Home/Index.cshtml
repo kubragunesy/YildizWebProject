@@ -1,56 +1,60 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-
-<link href="~/Yildizİnsaat/Anasayfa/style.css" rel="stylesheet" />
+@using EntitiyLayer.Concrete
+@model Contact
+<link href="~/Yildizİnsaat/Anasayfa/anasayfa.css" rel="stylesheet" />
 <div class="row mb-3 mt-5">
     <!---------------------------------sol row---------------------------------------->
-    <div class="col-sm-6 border border-danger">
+    <div class="col-sm-6 ">
         <div class="row m-2 mt-5 text-center">
             <h1 style="font-size: 60px;">47 yıllık inşaat tecrübemizle...</h1>
         </div>
 
     </div>
     <!-----------------------------------sag row-------------------------------------->
-    <div class="col-sm-6 p-5 bg-black border border-success">
+    <div class="col-sm-6 p-5 bg-black ">
 
         <div class="row mb-3 text-white">
             <h4>
                 Projelerimizle ilgili sizi bilgilendirelim
             </h4>
         </div>
-        <div class="row mb-3">
-            <div class="col-sm-6">
-                <input type="text" class="form-control" placeholder="Adınız" />
-            </div>
+        <form method="post">
+            <div class="row mb-3">
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" placeholder="Adınız" />
+                </div>
 
-            <div class="col-sm-6">
-                <input type="text" class="form-control" placeholder="Soyadınız" />
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" placeholder="Soyadınız" />
+                </div>
             </div>
-        </div>
-        <div class="row mb-3">
-            <div class="col-sm-6">
-                <input type="email"
-                       class="form-control"
-                       placeholder="E-mail Adresiniz" />
+            <div class="row mb-3">
+                <div class="col-sm-6">
+                    <input type="email"
+                           class="form-control"
+                           placeholder="E-mail Adresiniz" />
+                </div>
+                <div class="col-sm-6">
+                    <input type="text"
+                           class="form-control"
+                           placeholder="Telefon Numaranız" />
+                </div>
             </div>
-            <div class="col-sm-6">
-                <input type="text"
-                       class="form-control"
-                       placeholder="Telefon Numaranız" />
-            </div>
-        </div>
-        <div class="row mb-3">
-            <div class="col-sm-12">
-                <textarea rows="4" class="form-control" placeholder="Mesajınız...">
+            <div class="row mb-3">
+                <div class="col-sm-12">
+                    <textarea rows="4" class="form-control" placeholder="Mesajınız...">
           </textarea>
+                </div>
             </div>
-        </div>
-        <div class="row ">
-            <div class="col-sm-12">
-                <input type="button" class="btn btn-dark form-control" value="Gönder" />
+            <div class="row ">
+                <div class="col-sm-12">
+                    <input type="button" onclick="gonder()" class="btn btn-dark form-control" value="Gönder" />
+                </div>
             </div>
-        </div>
+        </form>
+
     </div>
 </div>
 
@@ -75,3 +79,11 @@
     </ul>
     <p class="text-center text-white">© 2022 Company, Inc</p>
 </footer>
+
+<script>
+    function gonder() {
+        alert("Mesajınız başarı ile gönderildi. Sizinle en yakın zamanda iletişime geçeceğiz.");
+        /*document.querySelector('#form-message-success').innerHTML = "Mesajınız başarı ile gönderildi. Sizinle en yakın zamanda iletişime geçeceğiz.";*/
+    }
+
+</script> 

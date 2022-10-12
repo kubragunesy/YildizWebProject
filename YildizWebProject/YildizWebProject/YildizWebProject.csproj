@@ -149,7 +149,6 @@
     <Compile Include="Controllers\BusinessController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\MediaController.cs" />
     <Compile Include="Controllers\ProjectController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -329,7 +328,7 @@
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="Yildizİnsaat\Anasayfa\f.jpg" />
     <Content Include="Yildizİnsaat\Anasayfa\logo.png" />
-    <Content Include="Yildizİnsaat\Anasayfa\style.css" />
+    <Content Include="Yildizİnsaat\Anasayfa\anasayfa.css" />
     <Content Include="Yildizİnsaat\Hakkımızda\about.css" />
     <Content Include="Yildizİnsaat\Hizmetlerimiz\ab.jpg" />
     <Content Include="Yildizİnsaat\Hizmetlerimiz\hizmet.css" />
@@ -344,7 +343,7 @@
     <Content Include="Yildizİnsaat\iletisim\css\bootstrap\utilities\_stretched-link.css" />
     <Content Include="Yildizİnsaat\iletisim\css\bootstrap\utilities\_visibility.css" />
     <Content Include="Yildizİnsaat\iletisim\css\bootstrap\_media.css" />
-    <Content Include="Yildizİnsaat\iletisim\css\style.css" />
+    <Content Include="Yildizİnsaat\iletisim\css\iletisim.css" />
     <Content Include="Yildizİnsaat\iletisim\f.jpg" />
     <Content Include="Yildizİnsaat\iletisim\iletisim.css" />
     <Content Include="Yildizİnsaat\iletisim\js\bootstrap.min.js" />
@@ -2147,7 +2146,6 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Business\Index.cshtml" />
     <Content Include="Views\Project\Index.cshtml" />
-    <Content Include="Views\Media\Index.cshtml" />
     <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="admin\.browserslistrc" />
     <Content Include="admin\.travis.yml" />
@@ -2330,11 +2328,9 @@
     <Content Include="Views\Shared\AdminLayout.cshtml" />
     <Content Include="Views\Business\YeniHizmet.cshtml" />
     <Content Include="Views\Contact\Yeniİletisim.cshtml" />
-    <Content Include="Views\Media\YeniMedia.cshtml" />
     <Content Include="Views\Project\YeniProje.cshtml" />
     <Content Include="Views\Business\GuncelleHizmet.cshtml" />
     <Content Include="Views\Contact\GuncelleIletisim.cshtml" />
-    <Content Include="Views\Media\GuncelleMedia.cshtml" />
     <Content Include="Views\Project\GuncelleProje.cshtml" />
     <Content Include="Views\Admin\LoginPanel.cshtml" />
     <Content Include="Views\About\Index.cshtml" />
