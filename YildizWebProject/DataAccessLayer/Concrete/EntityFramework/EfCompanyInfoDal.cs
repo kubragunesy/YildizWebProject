@@ -11,5 +11,6 @@ namespace DataAccessLayer.Concrete.EntityFramework
 {
     public class EfCompanyInfoDal:EfGenericDal<CompanyInfo>, ICompanyInfoDal
     {
+        //DataAccessLayer.Concrete.Context
     }
 }
