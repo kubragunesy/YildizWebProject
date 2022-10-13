@@ -402,6 +402,7 @@ C:\Users\Asus\Downloads\YildizWebProject-main\YildizWebProject-main\YildizWebPro
 C:\Users\Asus\Downloads\YildizWebProject-main\YildizWebProject-main\YildizWebProject\YildizWebProject\obj\Debug\YildizWebProject.csproj.CopyComplete
 C:\Users\Asus\Downloads\YildizWebProject-main\YildizWebProject-main\YildizWebProject\YildizWebProject\obj\Debug\YildizWebProject.dll
 C:\Users\Asus\Downloads\YildizWebProject-main\YildizWebProject-main\YildizWebProject\YildizWebProject\obj\Debug\YildizWebProject.pdb
+C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\YildizWebProject\YildizWebProject\bin\PagedList.Mvc.dll
 C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\YildizWebProject\YildizWebProject\bin\YildizWebProject.dll.config
 C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\YildizWebProject\YildizWebProject\bin\YildizWebProject.dll
 C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\YildizWebProject\YildizWebProject\bin\YildizWebProject.pdb
@@ -465,7 +466,6 @@ C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\YildizWebProje
 C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\YildizWebProject\YildizWebProject\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\YildizWebProject\YildizWebProject\bin\Newtonsoft.Json.dll
 C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\YildizWebProject\YildizWebProject\bin\PagedList.dll
-C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\YildizWebProject\YildizWebProject\bin\PagedList.Mvc.dll
 C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\YildizWebProject\YildizWebProject\bin\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\YildizWebProject\YildizWebProject\bin\System.Threading.Tasks.Extensions.dll
 C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\YildizWebProject\YildizWebProject\bin\System.Web.Helpers.dll

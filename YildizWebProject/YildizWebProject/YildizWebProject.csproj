@@ -326,9 +326,10 @@
     <Content Include="Content\bootstrap-grid.rtl.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Views\Shared\layout.css" />
     <Content Include="Yildizİnsaat\Anasayfa\f.jpg" />
     <Content Include="Yildizİnsaat\Anasayfa\logo.png" />
-    <Content Include="Yildizİnsaat\Anasayfa\anasayfa.css" />
+    <Content Include="Yildizİnsaat\Anasayfa\anasayfastyle.css" />
     <Content Include="Yildizİnsaat\Hakkımızda\about.css" />
     <Content Include="Yildizİnsaat\Hizmetlerimiz\ab.jpg" />
     <Content Include="Yildizİnsaat\Hizmetlerimiz\hizmet.css" />

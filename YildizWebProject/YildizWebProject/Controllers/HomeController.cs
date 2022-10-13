@@ -23,6 +23,7 @@ namespace YildizWebProject.Controllers
 
         public ActionResult Index()
         {
+            
             return View();
         }
 
@@ -31,6 +32,7 @@ namespace YildizWebProject.Controllers
             var list = aboutManager.GetAll();
             return View(list);
         }
+       
         [HttpGet]
         public ActionResult Contact()
         {
