@@ -6,7 +6,6 @@
 @using EntitiyLayer.Concrete
 @model List<CompanyInfo>
 <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
-
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
@@ -29,37 +28,6 @@
                     </div>
                 </div>
             }
-
-            @*<div class="col-md-3">
-                    <div class="dbox w-100 text-center">
-                        <div class="icon d-flex align-items-center justify-content-center bg-dark">
-                            <span class="fa fa-phone"></span>
-                        </div>
-                        <div class="text">
-                            <p><span>Telefon:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="dbox w-100 text-center">
-                        <div class="icon d-flex align-items-center justify-content-center bg-dark">
-                            <span class="fa fa-paper-plane"></span>
-                        </div>
-                        <div class="text">
-                            <p><span>E-mail:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="dbox w-100 text-center">
-                        <div class="icon d-flex align-items-center justify-content-center bg-dark">
-                            <span class="fa fa-instagram"></span>
-                        </div>
-                        <div class="text">
-                            <p><span>Instragram</span> <a href="#">yoursite.com</a></p>
-                        </div>
-                    </div>
-                </div>*@
         </div>
 
         <div class="row justify-content-center ">
@@ -70,46 +38,51 @@
                             <div class="contact-wrap w-100 p-md-5 p-4">
                                 <h3 class="mb-4 text-center">Bize Yazın</h3>
                                 <div id="form-message-warning" class="mb-4">
-
                                 </div>
                                 <div id="form-message-success" class="mb-4">
-
                                 </div>
                                 <form method="POST" id="contactForm" name="contactForm" class="contactForm">
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
-
-                                                <input type="text" class="form-control" name="customerName" id="customerName" placeholder="İsim">
+                                                <input type="text" class="form-control" name="customerName" id="customerName" placeholder="İsim" required>
+                                                <div class="valid-feedback">Valid.</div>
+                                                <div class="invalid-feedback">Please fill out this field.</div>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
 
-                                                <input type="text" class="form-control" name="customerLastName" id="customerLastName" placeholder="Soyisim">
+                                                <input type="text" class="form-control" name="customerLastName" id="customerLastName" placeholder="Soyisim" required>
+                                                <div class="valid-feedback">Valid.</div>
+                                                <div class="invalid-feedback">Please fill out this field.</div>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
 
-                                                <input type="email" class="form-control" name="customerMail" id="customerMail" placeholder="Email">
+                                                <input type="email" class="form-control" name="customerMail" id="customerMail" placeholder="Email" required>
+                                                <div class="valid-feedback">Valid.</div>
+                                                <div class="invalid-feedback">Please fill out this field.</div>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
 
-                                                <input type="tel" class="form-control" name="customerPhoneNumber" id="customerPhoneNumber" placeholder="Telefon">
+                                                <input type="tel" class="form-control" name="customerPhoneNumber" id="customerPhoneNumber" placeholder="Telefon" required>
+                                                <div class="valid-feedback">Valid.</div>
+                                                <div class="invalid-feedback">Please fill out this field.</div>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
 
-                                                <textarea name="customerMessage" class="form-control" id="customerMessage" cols="30" rows="4" placeholder="Mesaj"></textarea>
+                                                <textarea name="customerMessage" class="form-control" id="customerMessage" cols="30" rows="4" required placeholder="Mesaj"></textarea> 
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <input type="submit" onclick="gonder()" value="Gönder" class="btn btn-dark">
+                                                    <input type="submit" @*onclick="gonder()"*@ value="Gönder" class="btn btn-dark">
                                                 <div class="submitting"></div>
                                             </div>
                                         </div>
@@ -131,7 +104,7 @@
 </section>
 
 <footer class="py-3 my-4 ">
-    <ul class="nav justify-content-center pt-3 mt-5 border-top border-dark" style="font-size:18px">
+    <ul class="nav justify-content-center pt-3 mt-5 border-top " style="font-size:18px">
         <li class="nav-item">
             <a href="~/Home/Index" class="nav-link px-2 text-dark">Anasayfa</a>
         </li>
@@ -159,6 +132,8 @@
     <script src="~/Yildizİnsaat/iletisim/js/jquery.validate.min.js"></script>*@
 @*<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>*@
 <script src="~/Yildizİnsaat/iletisim/js/google-map.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
 @*<script src="~/Yildizİnsaat/iletisim/js/main.js"></script>*@
 
 

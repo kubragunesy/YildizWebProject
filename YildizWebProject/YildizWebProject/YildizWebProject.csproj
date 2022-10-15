@@ -355,7 +355,7 @@
     <Content Include="Yildizİnsaat\iletisim\js\popper.js" />
     <Content Include="Yildizİnsaat\index.html" />
     <Content Include="Yildizİnsaat\Projelerimiz\proje.css" />
-    <Content Include="Yildizİnsaat\style.css" />
+    <Content Include="Yildizİnsaat\proje.css" />
     <None Include="Scripts\jquery-3.6.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.6.0.js" />
     <Content Include="Scripts\jquery-3.6.0.min.js" />

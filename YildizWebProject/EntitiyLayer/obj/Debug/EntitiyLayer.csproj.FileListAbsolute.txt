@@ -62,6 +62,7 @@ C:\Users\Asus\Downloads\YildizWebProject-main\YildizWebProject-main\YildizWebPro
 C:\Users\Asus\Downloads\YildizWebProject-main\YildizWebProject-main\YildizWebProject\EntitiyLayer\obj\Debug\EntitiyLayer.csproj.CopyComplete
 C:\Users\Asus\Downloads\YildizWebProject-main\YildizWebProject-main\YildizWebProject\EntitiyLayer\obj\Debug\EntitiyLayer.dll
 C:\Users\Asus\Downloads\YildizWebProject-main\YildizWebProject-main\YildizWebProject\EntitiyLayer\obj\Debug\EntitiyLayer.pdb
+C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\YildizWebProject\EntitiyLayer\obj\Debug\EntitiyLayer.csproj.CopyComplete
 C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\YildizWebProject\EntitiyLayer\bin\Debug\EntitiyLayer.dll.config
 C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\YildizWebProject\EntitiyLayer\bin\Debug\EntitiyLayer.dll
 C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\YildizWebProject\EntitiyLayer\bin\Debug\EntitiyLayer.pdb
@@ -75,6 +76,5 @@ C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\YildizWebProje
 C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\YildizWebProject\EntitiyLayer\bin\Debug\PagedList.Mvc.xml
 C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\YildizWebProject\EntitiyLayer\obj\Debug\EntitiyLayer.csproj.AssemblyReference.cache
 C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\YildizWebProject\EntitiyLayer\obj\Debug\EntitiyLayer.csproj.CoreCompileInputs.cache
-C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\YildizWebProject\EntitiyLayer\obj\Debug\EntitiyLayer.csproj.CopyComplete
 C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\YildizWebProject\EntitiyLayer\obj\Debug\EntitiyLayer.dll
 C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\YildizWebProject\EntitiyLayer\obj\Debug\EntitiyLayer.pdb
