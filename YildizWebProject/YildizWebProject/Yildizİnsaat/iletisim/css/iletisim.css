@@ -8317,3 +8317,22 @@ textarea.form-control {
   font-size: 16px;
   font-weight: 500;
   color: #2553b8; }
+
+/*.message .success {
+    font-size: 20px;
+    color : green;
+    position: absolute;
+    animation: buttons .3s linear;
+    transition: .3s;
+    display: none;
+
+}
+
+.message .danger {
+    font-size: 20px;
+    color: red;
+    position: absolute;
+    animation: buttons .3s linear;
+    display: none;
+}
+*/
