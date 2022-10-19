@@ -1,0 +1,59 @@
+﻿@using EntitiyLayer.Concrete
+@model CompanyInfo
+@{
+    ViewBag.Title = "GuncelleIletisimBilgisi";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<h2 class="text-center">İletişim Bilgisi Güncelle</h2>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+<div class="container-fluid">
+
+
+    @using (Html.BeginForm("GuncelleIletisimBilgisi", "CompanyInfo", FormMethod.Post, new
+    { @class = "form-group" }))
+    {
+        @Html.HiddenFor(x => x.Id)
+        @Html.Label("İletişim Bilgisi Adı")
+        <br />
+        @Html.TextBoxFor(x => x.name, new { @class = "form-control" })
+        <div id="name" class="validation-container">
+            @*@Html.ValidationMessageFor(x => x.businessName)*@
+        </div>
+        <br />
+
+        @Html.Label("İletişim Bilgisi Logo")
+        <br />
+        @Html.TextBoxFor(x => x.logo, new { @class = "form-control" })
+        <div id="logo" class="validation-container">
+            @*@Html.ValidationMessageFor(x => x.businessDescription)*@
+        </div>
+        <br />
+        @Html.Label("İletişim Bilgisi Açıklama")
+        <br />
+        @Html.TextBoxFor(x => x.description, new { @class = "form-control" })
+        <div id="description" class="validation-container">
+            @*@Html.ValidationMessageFor(x => x.businessDescription)*@
+        </div>
+        <br />
+        @Html.Label("İletişim Bilgisi Statü")
+        <br />
+        @*@Html.TextBoxFor(x => x.statu, new { @class = "form-control" })*@
+      
+        <select class="form-control" name="statu">
+            <option value="true">Aktif</option>
+            <option value="false">Pasif</option>
+        </select>
+        <br />
+
+        <input type="submit" value="Değişiklikleri Kaydet" class="form-control bg-success text-white" />
+    }
+
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+

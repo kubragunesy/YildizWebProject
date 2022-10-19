@@ -147,6 +147,7 @@
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\BusinessController.cs" />
+    <Compile Include="Controllers\CompanyInfoController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProjectController.cs" />
@@ -2439,6 +2440,9 @@
     <Content Include="Yildizİnsaat\iletisim\scss\style.scss" />
     <Content Include="Views\Home\Project.cshtml" />
     <Content Include="Views\Home\Business.cshtml" />
+    <Content Include="Views\CompanyInfo\Index.cshtml" />
+    <Content Include="Views\CompanyInfo\GuncelleIletisimBilgisi.cshtml" />
+    <Content Include="Views\CompanyInfo\YeniIletisimBilgisi.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
