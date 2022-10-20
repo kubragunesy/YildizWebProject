@@ -2447,6 +2447,8 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\ImageAdd\" />
+    <Folder Include="İmage\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
