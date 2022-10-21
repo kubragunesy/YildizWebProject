@@ -32,30 +32,32 @@ namespace YildizWebProject.Controllers
         [HttpPost]
         public ActionResult YeniProje(Project project)
         {
-            //var sonuc = projectValidation.Validate(project);
-            //if (sonuc.IsValid)
-            if (Request.Files.Count > 0 )
-            
+            var sonuc = projectValidation.Validate(project);
+            if (sonuc.IsValid)
             {
-                string dosyaadi = Path.GetFileName(Request.Files[0].FileName);
-                string uzanti = Path.GetExtension(Request.Files[0].FileName);
-                string yol = "~/Image/" + dosyaadi + uzanti;
-                string path = Path.Combine(Server.MapPath("~/Image"), Path.GetFileName(Request.Files[0].FileName));
-                Request.Files[0].SaveAs(path);
-                Request.Files[0].SaveAs(Server.MapPath(yol));
-                project.projectMediaUrl = "/Image/" + dosyaadi + uzanti;
-                
+                if (Request.Files.Count > 0)
+                {
+                    
+                    string dosyaadi = Path.GetFileName(Request.Files[0].FileName);
+                    string uzanti = Path.GetExtension(Request.Files[0].FileName);
+                    string yol = "~/Image/" + dosyaadi + uzanti;
+                    string path = Path.Combine(Server.MapPath("~/Image"), Path.GetFileName(Request.Files[0].FileName));
+                    Request.Files[0].SaveAs(path);
+                    Request.Files[0].SaveAs(Server.MapPath(yol));
+                    project.projectMediaUrl = "~/Image/" + dosyaadi + uzanti;
+                }
+                projectManager.Insert(project);
+                return RedirectToAction("Index");
             }
-            projectManager.Insert(project);
-            return RedirectToAction("Index");
-            //else
-            //{
-            //    foreach (var item in sonuc.Errors)
-            //    {
-            //        ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
-            //    }
-            //}
-            //return View();
+         
+            else
+            {
+                foreach (var item in sonuc.Errors)
+                {
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                }
+            }
+            return View();
         }
         public ActionResult SilProje(int id)
         {
