@@ -1,17 +1,18 @@
-﻿@{
-    ViewBag.Title = "Contact";
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
-
-@using EntitiyLayer.Concrete
+﻿@using EntitiyLayer.Concrete
 @model List<CompanyInfo>
-<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2/theme-borderless@3/borderless.css">
-
+@{
+    ViewBag.Title = "Contact";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+}
 
 
 <link href="~/Yildizİnsaat/iletisim/css/iletisim.css" rel="stylesheet" />
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+@*<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2/theme-borderless@3/borderless.css">*@
+
+
+
 
 <section class="ftco-section ">
     <div class="container ">
@@ -42,61 +43,60 @@
                                 </div>
                                 <div id="form-message-success" class="mb-4">
                                 </div>
-                                @*<div class="alert alert-info" id="sendmessage"> ViewBag.Uyari</div>*@
+
                                 <form method="POST" id="contactForm" name="contactForm" class="contactForm">
-                                   
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" name="customerName" id="customerName" placeholder="İsim" required>
-                                                    <div class="valid-feedback">Valid.</div>
-                                                    <div class="invalid-feedback">Please fill out this field.</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="form-group">
 
-                                                    <input type="text" class="form-control" name="customerLastName" id="customerLastName" placeholder="Soyisim" required>
-                                                    <div class="valid-feedback">Valid.</div>
-                                                    <div class="invalid-feedback">Please fill out this field.</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-
-                                                    <input type="email" class="form-control" name="customerMail" id="customerMail" placeholder="Email" required>
-                                                    <div class="valid-feedback">Valid.</div>
-                                                    <div class="invalid-feedback">Please fill out this field.</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <input type="tel" class="form-control" name="customerPhoneNumber" id="customerPhoneNumber" placeholder="Telefon" required>
-                                                    <div class="valid-feedback">Valid.</div>
-                                                    <div class="invalid-feedback">Please fill out this field.</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    <textarea name="customerMessage" class="form-control" id="customerMessage" cols="30" rows="4" required placeholder="Mesaj"></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <div class="form-group">
-                                                    @*<a href="javascript:void(0)" onclick="MesajGoster();">Başarılı İşlem</a>*@
-                                                    <input type="submit" onclick="gonder()" value="Gönder" class="btn btn-dark">
-                                                    <div class="submitting"></div>
-                                                </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" name="customerName" id="customerName" placeholder="İsim" required>
+                                                <div class="valid-feedback">Valid.</div>
+                                                <div class="invalid-feedback">Please fill out this field.</div>
                                             </div>
                                         </div>
-                                    
-                                    </form>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+
+                                                <input type="text" class="form-control" name="customerLastName" id="customerLastName" placeholder="Soyisim" required>
+                                                <div class="valid-feedback">Valid.</div>
+                                                <div class="invalid-feedback">Please fill out this field.</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+
+                                                <input type="email" class="form-control" name="customerMail" id="customerMail" placeholder="Email" required>
+                                                <div class="valid-feedback">Valid.</div>
+                                                <div class="invalid-feedback">Please fill out this field.</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="tel" class="form-control" name="customerPhoneNumber" id="customerPhoneNumber" placeholder="Telefon" required>
+                                                <div class="valid-feedback">Valid.</div>
+                                                <div class="invalid-feedback">Please fill out this field.</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <textarea name="customerMessage" class="form-control" id="customerMessage" cols="30" rows="4" required placeholder="Mesajınız"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 ">
+                                            <div class="form-group">
+                                                <input type="submit" onclick="gonder()" id="gonder" value="Gönder" class="btn btn-dark w-100">
+                                                <div class="submitting"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </form>
                             </div>
                         </div>
                         <div class="col-md-5 d-flex align-items-stretch">
                             <div id="map">
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45347.29404909317!2d29.16172452425695!3d40.920601153138726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac4f1dd92e915%3A0x7bf91a7dd7b26dcc!2sKartal%2F%C4%B0stanbul!5e1!3m2!1str!2str!4v1665585899442!5m2!1str!2str" style="border:0; width:100%; height:100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48236.45682784426!2d29.161724524256957!3d40.920601153138726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caba0b766c40b7%3A0x56f40de577c67da3!2sProf.%20Dr.%20T%C3%BCrkan%20Saylan%20K%C3%BClt%C3%BCr%20Merkezi!5e0!3m2!1str!2str!4v1664452644058!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                                @*                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48236.45682784426!2d29.161724524256957!3d40.920601153138726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caba0b766c40b7%3A0x56f40de577c67da3!2sProf.%20Dr.%20T%C3%BCrkan%20Saylan%20K%C3%BClt%C3%BCr%20Merkezi!5e0!3m2!1str!2str!4v1664452644058!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>*@
                             </div>
                         </div>
                     </div>
@@ -129,20 +129,16 @@
 </footer>
 
 
-@*<script src="~/Yildizİnsaat/iletisim/js/jquery.min.js"></script>
-    <script src="~/Yildizİnsaat/iletisim/js/popper.js"></script>
-    <script src="~/Yildizİnsaat/iletisim/js/bootstrap.min.js"></script>
-    <script src="~/Yildizİnsaat/iletisim/js/jquery.validate.min.js"></script>*@
-@*<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>*@
 <script src="~/Yildizİnsaat/iletisim/js/google-map.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
 
-@*<script src="~/Yildizİnsaat/iletisim/js/main.js"></script>*@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-@*<script>
+
+<script>
     function gonder() {
-        alert("Mesajınız başarı ile gönderildi. Sizinle en yakın zamanda iletişime geçeceğiz.");
-        /*document.querySelector('#form-message-success').innerHTML = "Mesajınız başarı ile gönderildi. Sizinle en yakın zamanda iletişime geçeceğiz.";*/
+        /* alert("Mesajınız başarı ile gönderildi. Sizinle en yakın zamanda iletişime geçeceğiz.");*/
+        document.querySelector('#form-message-success').innerHTML = "Mesajınız başarı ile gönderildi. Sizinle en yakın zamanda iletişime geçeceğiz.";
     }
-</script>*@
+</script>
 

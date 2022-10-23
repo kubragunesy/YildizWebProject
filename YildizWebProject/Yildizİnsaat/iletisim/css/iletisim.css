@@ -1,9 +1,4 @@
-/*!
- * Bootstrap v4.3.1 (https://getbootstrap.com/)
- * Copyright 2011-2019 The Bootstrap Authors
- * Copyright 2011-2019 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -3495,7 +3490,12 @@ input[type="button"].btn-block {
   flex-grow: 1;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  
+  
+  
+}
+
 
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
@@ -3512,8 +3512,8 @@ input[type="button"].btn-block {
   width: 1.5em;
   height: 1.5em;
   vertical-align: middle;
-  content: "";
-  background: no-repeat center center;
+  content: "" !important;
+  /*background-repeat:no-repeat;*/
   background-size: 100% 100%; }
 
 @media (max-width: 575.98px) {
@@ -3726,10 +3726,13 @@ input[type="button"].btn-block {
   border-color: rgba(0, 0, 0, 0.1); }
 
 .navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
-
+  background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  
+}
+  
 .navbar-light .navbar-text {
-  color: rgba(0, 0, 0, 0.5); }
+    color: rgba(0, 0, 0, 0.5);
+}
   .navbar-light .navbar-text a {
     color: rgba(0, 0, 0, 0.9); }
     .navbar-light .navbar-text a:hover, .navbar-light .navbar-text a:focus {
