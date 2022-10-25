@@ -12,7 +12,7 @@
 
 
     @using (Html.BeginForm("YeniProje", "Project", FormMethod.Post, @*new
-    { @class = "form-group" }*@ new {enctype = "multipart/ form-data"}))
+    { @class = "form-group" }*@ new {enctype = "multipart/form-data"}))
     {
         @Html.HiddenFor(x => x.projectId)
         @Html.Label("Proje Adı")
@@ -35,7 +35,7 @@
         <div id="projectMediaUrl" class="validation-container">
            @*@Html.ValidationMessageFor(x => x.projectMediaUrl, null, new {@class="text-danger"})*@
         </div>
-        <input type="file" name="projectMediaUrl"/>
+        <input type="file" name="projectMediaUrl" />
         <br />
         <br />
         @Html.Label("Statü")

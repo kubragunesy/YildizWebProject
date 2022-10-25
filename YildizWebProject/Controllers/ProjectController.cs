@@ -30,23 +30,34 @@ namespace YildizWebProject.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult YeniProje(Project project)
+        public ActionResult YeniProje(Project project, HttpPostedFileBase projectMediaUrl)
         {
+            //File file;
             var sonuc = projectValidation.Validate(project);
             if (sonuc.IsValid)
             {
-                if (Request.Files.Count > 0)
+
+                try
                 {
-                    
-                    string dosyaadi = Path.GetFileName(Request.Files[0].FileName);
-                    string uzanti = Path.GetExtension(Request.Files[0].FileName);
-                    string yol = "~/Image/" + dosyaadi + uzanti;
-                    string path = Path.Combine(Server.MapPath("~/Image"), Path.GetFileName(Request.Files[0].FileName));
-                    Request.Files[0].SaveAs(path);
-                    Request.Files[0].SaveAs(Server.MapPath(yol));
-                    project.projectMediaUrl = "~/Image/" + dosyaadi + uzanti;
+
+                    if (projectMediaUrl != null && projectMediaUrl.ContentLength > 0)
+                    {
+                        string path = Path.Combine(Server.MapPath("~/Image"), Path.GetFileName(projectMediaUrl.FileName));
+                        projectMediaUrl.SaveAs(path);
+                        project.projectMediaUrl = projectMediaUrl.FileName;
+                        projectManager.Insert(project);
+                    }
+                    else {
+                        return View();
+                    }
+
                 }
-                projectManager.Insert(project);
+                catch (Exception exc)
+                {
+
+                    Console.WriteLine(exc.Message);
+                }
+               
                 return RedirectToAction("Index");
             }
          
