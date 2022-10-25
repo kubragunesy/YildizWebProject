@@ -2465,6 +2465,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Icon\" />
     <Folder Include="Image\" />
     <Folder Include="Models\" />
     <Folder Include="Views\ImageAdd\" />

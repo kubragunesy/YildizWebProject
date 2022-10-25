@@ -37,6 +37,7 @@
             <th>Hizmet ID</th>
             <th>Hizmet Adı</th>
             <th>Hizmet Açıklama</th>
+            <th>Hizmet Icon</th>
             <th>Statü</th>
         </tr>
     </thead>
@@ -46,6 +47,7 @@
             <td>@item.businessId</td>
             <td>@item.businessName</td>
             <td>@item.businessDescription</td>
+            <td> <img width="50" height="50" src="~/Icon/@item.businessIcon" /></td>
             <td>@item.statu</td>
             <td><button type="button" class="btn btn-danger text-white" data-bs-whatever="@item.businessId" data-bs-toggle="modal" data-bs-target="#silModal">Sil</button></td>
             <td>

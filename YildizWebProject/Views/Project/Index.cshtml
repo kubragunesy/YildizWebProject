@@ -35,7 +35,7 @@
         <th> # </th>
         <th> Proje Ad</th>
         <th> Proje Açıklama</th>
-        <th> Medya URL</th>
+        <th> Medya</th>
 
         <th> Statü</th>
     </tr>
@@ -45,7 +45,7 @@
             <td>@item.projectId</td>
             <td>@item.projectName</td>
             <td>@item.projectDescription</td>
-            <td>@item.projectMediaUrl</td>
+            <td> <img width="50" height="50" src="~/Image/@item.projectMediaUrl"/></td>
             <td>@item.statu</td>
             <td>
                 <button type="button" class="btn btn-danger text-white" data-bs-whatever="@item.projectId" data-bs-toggle="modal" data-bs-target="#silModal">Sil</button>

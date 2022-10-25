@@ -16,5 +16,6 @@ namespace EntitiyLayer.Concrete
         public string password { get; set; }
         [StringLength(1)]
         public string adminRole { get; set; }
+       
     }
 }

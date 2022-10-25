@@ -12,8 +12,7 @@
 <div class="container-fluid">
 
 
-    @using (Html.BeginForm("YeniHizmet", "Business", FormMethod.Post, new
-    { @class = "form-group" }))
+    @using (Html.BeginForm("YeniHizmet", "Business", FormMethod.Post, new { enctype = "multipart/form-data" }))
     {
 
         @Html.Label("Hizmet Adı")
@@ -29,6 +28,15 @@
         <div id="businessDescription" class="validation-container">
             @Html.ValidationMessageFor(x => x.businessDescription, null, new { @class = "text-danger" })
         </div>
+        <br />
+        @Html.Label("Icon Seç")
+        <br />
+        //Html.TextBoxFor(x => x.projectMediaUrl, new { @class = "form-control" })
+        <div id="businessIcon" class="validation-container">
+            @*@Html.ValidationMessageFor(x => x.projectMediaUrl, null, new {@class="text-danger"})*@
+        </div>
+        <input type="file" name="businessIcon" />
+        <br />
         <br />
         @Html.Label("Statu")
         <br />

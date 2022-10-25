@@ -30,7 +30,7 @@
             @Html.ValidationMessageFor(x => x.projectDescription, null, new {@class="text-danger"})
         </div>
         <br />
-        @Html.Label("Medya Url")
+        @Html.Label("Medya Seç")
         <br />
         //Html.TextBoxFor(x => x.projectMediaUrl, new { @class = "form-control" })
         <div id="projectMediaUrl" class="validation-container">
@@ -39,10 +39,13 @@
         <input type="file" name="projectMediaUrl" />
         <br />
         <br />
+        <span style="color:red">Uyarı : Lütfen sadece yatay görsel ekleyiniz.</span>
+        <br />
+        <br />
         @Html.Label("Statü")
         <br />
-        <!--@Html.TextBoxFor(x => x.statu, new { @class = "form-control" })
-        <div id="statu" class="validation-container">-->
+        <!--@Html.TextBoxFor(x => x.statu, new { @class = ".form-control" })
+        <div id="statu" class="validation-continer">-->
         @*@Html.ValidationMessageFor(x => x.businessDescription)*@
         <!--</div>
         <br />-->

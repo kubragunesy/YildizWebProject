@@ -6,6 +6,9 @@ using BusinessLayer.Validations;
 using FluentValidation;
 using PagedList;
 using PagedList.Mvc;
+using System.Web;
+using System.IO;
+using System;
 
 namespace YildizWebProject.Controllers
 {
@@ -26,14 +29,44 @@ namespace YildizWebProject.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult YeniHizmet(Business business)
+        public ActionResult YeniHizmet(Business business, HttpPostedFileBase businessIcon)
         {
+
             var sonuc = businessValidation.Validate(business);
             if (sonuc.IsValid)
             {
-                businessManager.Insert(business);
+
+                try
+                {
+
+                    if (businessIcon != null && businessIcon.ContentLength > 0)
+                    {
+                        string path = Path.Combine(Server.MapPath("~/Icon"), Path.GetFileName(businessIcon.FileName));
+                        businessIcon.SaveAs(path);
+                        business.businessIcon = businessIcon.FileName;
+                        businessManager.Insert(business);
+                    }
+                    else
+                    {
+                        return View();
+                    }
+
+                }
+                //catch (Exception exc)
+                //{
+                //    ViewBag.message = exc.Message.ToString();
+
+                //}
+                catch (Exception)
+                {
+                    ViewBag.message = "Görsel seçilmedi";
+
+                }
+
+
                 return RedirectToAction("Index");
             }
+
             else
             {
                 foreach (var item in sonuc.Errors)
@@ -57,10 +90,55 @@ namespace YildizWebProject.Controllers
             return View(guncelle);
         }
         [HttpPost]
-        public ActionResult GuncelleHizmet(Business business)
+        public ActionResult GuncelleHizmet(Business business, HttpPostedFileBase businessIcon)
         {
-            businessManager.Update(business);
-            return RedirectToAction("Index");
+
+            var sonuc = businessValidation.Validate(business);
+            if (sonuc.IsValid)
+            {
+
+                try
+                {
+
+                    if (businessIcon != null && businessIcon.ContentLength > 0)
+                    {
+                        string path = Path.Combine(Server.MapPath("~/Icon"), Path.GetFileName(businessIcon.FileName));
+                        businessIcon.SaveAs(path);
+                        business.businessIcon = businessIcon.FileName;
+                        businessManager.Insert(business);
+                    }
+                    else
+                    {
+                        return View();
+                    }
+
+                }
+                //catch (Exception exc)
+                //{
+                //    ViewBag.message = exc.Message.ToString();
+
+                //}
+                catch (Exception)
+                {
+                    ViewBag.message = "Görsel seçilmedi";
+
+                }
+
+
+                return RedirectToAction("Index");
+            }
+
+            else
+            {
+                foreach (var item in sonuc.Errors)
+                {
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                }
+            }
+            return View();
         }
+
+
+
     }
 }

@@ -52,12 +52,12 @@ namespace YildizWebProject.Controllers
                     }
 
                 }
-                catch (Exception exc)
+                catch (Exception)
                 {
+                    ViewBag.message = "Görsel seçilmedi";
 
-                    Console.WriteLine(exc.Message);
                 }
-               
+
                 return RedirectToAction("Index");
             }
          
@@ -102,10 +102,10 @@ namespace YildizWebProject.Controllers
                 }
 
             }
-            catch (Exception exc)
+            catch (Exception )
             {
 
-                Console.WriteLine(exc.Message);
+                ViewBag.message = "Görsel seçilmedi";
             }
 
 
