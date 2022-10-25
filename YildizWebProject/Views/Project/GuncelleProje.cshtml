@@ -11,8 +11,7 @@
 <div class="container-fluid">
 
 
-    @using (Html.BeginForm("GuncelleProje", "Project", FormMethod.Post, new
-    { @class = "form-group" }))
+    @using (Html.BeginForm("GuncelleProje", "Project", FormMethod.Post, new { enctype = "multipart/form-data" }))
     {
         @Html.HiddenFor(x => x.projectId)
         @Html.Label("Proje Adı")
@@ -31,10 +30,12 @@
         <br />
         @Html.Label("Medya Url")
         <br />
-        @Html.TextBoxFor(x => x.projectMediaUrl, new { @class = "form-control" })
+        //Html.TextBoxFor(x => x.projectMediaUrl, new { @class = "form-control" })
         <div id="projectMediaUrl" class="validation-container">
-            @*@Html.ValidationMessageFor(x => x.businessName)*@
+            @*@Html.ValidationMessageFor(x => x.projectMediaUrl, null, new {@class="text-danger"})*@
         </div>
+        <input type="file" name="projectMediaUrl" />
+        <br />
         <br />
         @Html.Label("Statü")
         <br />

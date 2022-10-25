@@ -32,7 +32,7 @@ namespace YildizWebProject.Controllers
         [HttpPost]
         public ActionResult YeniProje(Project project, HttpPostedFileBase projectMediaUrl)
         {
-            //File file;
+            
             var sonuc = projectValidation.Validate(project);
             if (sonuc.IsValid)
             {
@@ -84,10 +84,33 @@ namespace YildizWebProject.Controllers
             return View(guncelle);
         }
         [HttpPost]
-        public ActionResult GuncelleProje(Project project)
+        public ActionResult GuncelleProje(Project project, HttpPostedFileBase projectMediaUrl)
         {
-            projectManager.Update(project);
+            try
+            {
+
+                if (projectMediaUrl != null && projectMediaUrl.ContentLength > 0)
+                {
+                    string path = Path.Combine(Server.MapPath("~/Image"), Path.GetFileName(projectMediaUrl.FileName));
+                    projectMediaUrl.SaveAs(path);
+                    project.projectMediaUrl = projectMediaUrl.FileName;
+                    projectManager.Update(project);
+                }
+                else
+                {
+                    return View();
+                }
+
+            }
+            catch (Exception exc)
+            {
+
+                Console.WriteLine(exc.Message);
+            }
+
+
             return RedirectToAction("Index");
+
         }
         
     }

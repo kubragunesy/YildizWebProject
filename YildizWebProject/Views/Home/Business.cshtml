@@ -38,20 +38,24 @@
     <div class="row row-cols-1 row-cols-md-4 g-4 m-5 text-center">
         @foreach (var item in Model)
         {
-            <div class="col">
-                <div class="card h-100 p-4">
-                    @*<img src="@item.businessIcon" class="card-img-top rounded mx-auto d-block w-25" alt="...">*@
+            if (item.statu == true)
+            {
+                <div class="col">
+                    <div class="card h-100 p-4">
+                        @*<img src="@item.businessIcon" class="card-img-top rounded mx-auto d-block w-25" alt="...">*@
 
-                    <div class="icon mt-5 d-flex align-items-center justify-content-center ">
-                        <span class="@item.businessIcon"></span>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title mt-3">@item.businessName</h5>
-                        <p class="card-text">@item.businessDescription</p>
-                    </div>
+                        <div class="icon mt-5 d-flex align-items-center justify-content-center ">
+                            <span class="@item.businessIcon"></span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title mt-3">@item.businessName</h5>
+                            <p class="card-text">@item.businessDescription</p>
+                        </div>
 
+                    </div>
                 </div>
-            </div>
+            }
+
         }
     </div>
 </content>

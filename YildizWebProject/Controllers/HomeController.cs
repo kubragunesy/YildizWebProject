@@ -93,7 +93,7 @@ namespace YildizWebProject.Controllers
             //mail.IsBodyHtml = true;
 
             //SmtpClient smtp = new SmtpClient();
-            //smtp.Credentials = new NetworkCredential("abdussametsolak@outlook.com","Abdussamet4*81f396bf");
+            //smtp.Credentials = new NetworkCredential("abdussametsolak@outlook.com","sifre");
             ////gonderen kısının bilgileri
             //smtp.Port = 587;
             //smtp.Host = "smtp.live.com";
@@ -107,12 +107,13 @@ namespace YildizWebProject.Controllers
             //    TempData["Message"] = "mail gonderıldi";
             //}
             //catch (Exception ex)
-            //{
+            //{  
             //    TempData["Message"]="mail gonderılemedi "+ex.Message;
 
             //}
 
             contactManager.Insert(contact);
+            ViewBag.Message = "Eklendi";
             return RedirectToAction("Contact");
         }
         public ActionResult Project()

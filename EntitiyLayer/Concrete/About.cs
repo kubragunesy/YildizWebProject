@@ -13,5 +13,6 @@ namespace EntitiyLayer.Concrete
         public int aboutId  { get; set; } 
         public string aboutName { get; set; } 
         public string aboutDescription { get; set; }
+
     }
 }
