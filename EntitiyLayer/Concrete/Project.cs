@@ -11,8 +11,11 @@ namespace EntitiyLayer.Concrete
     {
         [Key]
         public int projectId { get; set; }
+        [StringLength(50)]
         public string projectName { get; set; }
+        [StringLength(1000)]
         public string projectDescription { get; set; }
+        [StringLength(200)]
         public string projectMediaUrl { get; set; }
         public bool statu { get; set; }
         

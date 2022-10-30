@@ -11,10 +11,15 @@ namespace EntitiyLayer.Concrete
     {
         [Key]
         public int customerId { get; set; }
+        [StringLength(50)]
         public string customerName { get; set; }
+        [StringLength(50)]
         public string customerLastName { get; set; }
+        [StringLength(100)]
         public string customerMail { get; set; }
+        [StringLength(15)]
         public string customerPhoneNumber { get; set; }
+        [StringLength(1000)]
         public string customerMessage { get; set; }
         public bool statu { get; set; }
     }

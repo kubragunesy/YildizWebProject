@@ -11,37 +11,37 @@
 <div class="container-fluid">
 
 
-    @using (Html.BeginForm("GuncelleIletisimBilgisi", "CompanyInfo", FormMethod.Post, new
-    { @class = "form-group" }))
+    @using (Html.BeginForm("YeniIletisimBilgisi", "CompanyInfo", FormMethod.Post, new { enctype = "multipart/form-data" }))
     {
         @Html.HiddenFor(x => x.Id)
         @Html.Label("İletişim Bilgisi Adı")
         <br />
         @Html.TextBoxFor(x => x.name, new { @class = "form-control" })
         <div id="name" class="validation-container">
-            @*@Html.ValidationMessageFor(x => x.businessName)*@
+           
         </div>
+        <br />
+        @Html.Label("Ikon Seç")
+        <br />
+        
+        <div id="logo" class="validation-container">
+          
+        </div>
+        <input type="file" name="logo" />
+        <br />
         <br />
 
-        @Html.Label("İletişim Bilgisi Logo")
-        <br />
-        @Html.TextBoxFor(x => x.logo, new { @class = "form-control" })
-        <div id="logo" class="validation-container">
-            @*@Html.ValidationMessageFor(x => x.businessDescription)*@
-        </div>
         <br />
         @Html.Label("İletişim Bilgisi Açıklama")
         <br />
         @Html.TextBoxFor(x => x.description, new { @class = "form-control" })
         <div id="description" class="validation-container">
-            @*@Html.ValidationMessageFor(x => x.businessDescription)*@
+           
         </div>
         <br />
         @Html.Label("İletişim Bilgisi Statü")
         <br />
-        @*@Html.TextBoxFor(x => x.statu, new { @class = "form-control" })
-
-        <br />*@
+    
         <br />
         <select class="form-control" name="statu">
             <option value="true">Aktif</option>

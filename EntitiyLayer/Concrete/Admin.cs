@@ -11,11 +11,13 @@ namespace EntitiyLayer.Concrete
     {
         [Key]
         public int adminId { get; set; }
+        [StringLength(50)]
         public string adminUserName { get; set; }
-        [StringLength(20)]
+        [StringLength(50)]
         public string password { get; set; }
-        [StringLength(1)]
-        public string adminRole { get; set; }
-       
+        
+        public bool adminCinsiyet { get; set; }
+
+        
     }
 }

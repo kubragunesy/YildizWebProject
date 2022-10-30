@@ -1,0 +1,16 @@
+C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\EntitiyLayer\bin\Release\EntitiyLayer.dll.config
+C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\EntitiyLayer\bin\Release\EntitiyLayer.dll
+C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\EntitiyLayer\bin\Release\EntitiyLayer.pdb
+C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\EntitiyLayer\bin\Release\EntityFramework.dll
+C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\EntitiyLayer\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\EntitiyLayer\bin\Release\PagedList.dll
+C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\EntitiyLayer\bin\Release\PagedList.Mvc.dll
+C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\EntitiyLayer\bin\Release\EntityFramework.xml
+C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\EntitiyLayer\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\EntitiyLayer\bin\Release\PagedList.xml
+C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\EntitiyLayer\bin\Release\PagedList.Mvc.xml
+C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\EntitiyLayer\obj\Release\EntitiyLayer.csproj.AssemblyReference.cache
+C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\EntitiyLayer\obj\Release\EntitiyLayer.csproj.CoreCompileInputs.cache
+C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\EntitiyLayer\obj\Release\EntitiyLayer.csproj.CopyComplete
+C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\EntitiyLayer\obj\Release\EntitiyLayer.dll
+C:\Users\GUNES\Documents\GitHub\YildizWebProject\YildizWebProject\EntitiyLayer\obj\Release\EntitiyLayer.pdb

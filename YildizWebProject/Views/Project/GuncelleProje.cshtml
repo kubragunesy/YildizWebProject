@@ -18,21 +18,20 @@
         <br />
         @Html.TextBoxFor(x => x.projectName, new { @class = "form-control" })
         <div id="projectName" class="validation-container">
-            @*@Html.ValidationMessageFor(x => x.businessName)*@
         </div>
         <br />
         @Html.Label("Proje Açıklama")
         <br />
         @Html.TextBoxFor(x => x.projectDescription, new { @class = "form-control" })
         <div id="projectDescription" class="validation-container">
-            @*@Html.ValidationMessageFor(x => x.businessName)*@
+
         </div>
         <br />
         @Html.Label("Medya Seç")
         <br />
-        //Html.TextBoxFor(x => x.projectMediaUrl, new { @class = "form-control" })
+
         <div id="projectMediaUrl" class="validation-container">
-            @*@Html.ValidationMessageFor(x => x.projectMediaUrl, null, new {@class="text-danger"})*@
+
         </div>
         <input type="file" name="projectMediaUrl" />
         <br />
@@ -42,10 +41,6 @@
         <br />
         @Html.Label("Statü")
         <br />
-        <!--@Html.TextBoxFor(x => x.statu, new { @class = "form-control" })
-        <div id="statu" class="validation-container">-->
-        @*@Html.ValidationMessageFor(x => x.businessDescription)*@
-        <!--</div>-->
         <select class="form-control" name="statu">
             <option value="true">Aktif</option>
             <option value="false">Pasif</option>

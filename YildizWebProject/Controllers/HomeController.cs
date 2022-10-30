@@ -32,7 +32,16 @@ namespace YildizWebProject.Controllers
         public ActionResult Index(Contact contact)
         {
 
-            contactManager.Insert(contact);
+            try
+            {
+                contactManager.Insert(contact);
+                TempData["Mesaj"] = "✓ Form başarılı bir şekilde ulaştı.";
+            }
+            catch (Exception ex)
+            {
+                TempData["Mesaj"] = ex.Message.ToString();
+
+            }
             return RedirectToAction("Index");
         }
 
@@ -65,7 +74,7 @@ namespace YildizWebProject.Controllers
             //{
             //    ViewBag.Uyari = "Hata Oluştu. Tekrar Deneyiniz";
             //}
-            
+
 
             //MailMessage mail = new MailMessage();
             //mail.IsBodyHtml = true;
@@ -84,7 +93,7 @@ namespace YildizWebProject.Controllers
             //smtp.UseDefaultCredentials = false;
             //smtp.Credentials = new System.Net.NetworkCredential("insaatisii@gmail.con", "insaat61"); //mail serverının kullanıcı bilgileri
             //smtp.Send(mail);
-            
+
             //MailMessage mail=new MailMessage();
             //mail.To.Add("abdussametsolak@outlook.com"); // kıme
             //mail.From = new MailAddress("abdussametsolak@outlook.com"); //kımden
@@ -112,8 +121,17 @@ namespace YildizWebProject.Controllers
 
             //}
 
-            contactManager.Insert(contact);
-            ViewBag.Message = "Eklendi";
+            try
+            {
+                contactManager.Insert(contact);
+                TempData["Mesaj"] = "✓ Form başarılı bir şekilde ulaştı.";
+            }
+            catch (Exception)
+            {
+                TempData["Mesaj"] = "Hata oluştu, tekrar deneyiniz.";
+
+            }
+            
             return RedirectToAction("Contact");
         }
         public ActionResult Project()

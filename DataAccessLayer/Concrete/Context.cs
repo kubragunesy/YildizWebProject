@@ -10,6 +10,7 @@ namespace DataAccessLayer.Concrete
 {
     public class Context: DbContext
     {
+        
         public DbSet <Business> Businesses { get; set; }
         public DbSet <Contact> Contacts { get; set; }
         public DbSet <Project> Projects { get; set; }

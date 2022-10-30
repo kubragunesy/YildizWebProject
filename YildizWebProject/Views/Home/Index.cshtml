@@ -4,6 +4,7 @@
 @using EntitiyLayer.Concrete
 @model Contact
 
+
 <link href="~/Yildizİnsaat/Anasayfa/anasayfastyle.css" rel="stylesheet" />
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2/theme-borderless@3/borderless.css">
@@ -24,30 +25,30 @@
             </h4>
         </div>
         <form method="POST" id="contactForm" name="contactForm" class="contactForm">
-            
-        <div class="row mb-3">
-            <div class="col-sm-6">
-                <div class="form-group">
-                    <input type="text" id="customerName" name="customerName" class="form-control" placeholder="Adınız" required>
-                    <div class="valid-feedback">Valid.</div>
-                    <div class="invalid-feedback">Please fill out this field.</div>
+
+            <div class="row mb-3">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <input type="text" id="customerName" name="customerName" class="form-control rounded-0" placeholder="Adınız" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
                 </div>
-            </div>
 
 
-            <div class="col-sm-6">
-                <div class="form-group">
-                    <input type="text" id="customerLastName" name="customerLastName" class="form-control" placeholder="Soyadınız" required>
-                    <div class="valid-feedback">Valid.</div>
-                    <div class="invalid-feedback">Please fill out this field.</div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <input type="text" id="customerLastName" name="customerLastName" class="form-control rounded-0" placeholder="Soyadınız" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
                 </div>
             </div>
-        </div>
             <div class="row mb-3">
                 <div class="col-sm-6">
                     <div class="form-group">
                         <input type="email" id="customerMail" name="customerMail"
-                               class="form-control"
+                               class="form-control rounded-0"
                                placeholder="E-mail Adresiniz" required>
                         <div class="valid-feedback">Valid.</div>
                         <div class="invalid-feedback">Please fill out this field.</div>
@@ -57,7 +58,7 @@
                 <div class="col-sm-6">
                     <div class="form-group">
                         <input type="text" id="customerPhoneNumber" name="customerPhoneNumber"
-                               class="form-control"
+                               class="form-control rounded-0" pattern="[0-9]{11}"
                                placeholder="Telefon Numaranız" required>
                         <div class="valid-feedback">Valid.</div>
                         <div class="invalid-feedback">Please fill out this field.</div>
@@ -68,28 +69,29 @@
             <div class="row mb-3">
                 <div class="col-sm-12">
                     <div class="form-group">
-                        <textarea rows="4" class="form-control" id="customerMessage" name="customerMessage" placeholder="Mesajınız..." required> </textarea>
+                        <textarea rows="5" class="form-control rounded-0" name="customerMessage" required placeholder="Mesajınız..."></textarea>
                         <div class="valid-feedback">Valid.</div>
                         <div class="invalid-feedback">Please fill out this field.</div>
                     </div>
                 </div>
             </div>
+
             <div class="row ">
                 <div class="col-sm-12">
                     <div class="form-group">
-                        <input type="submit" class="btn btn-dark form-control" value="Gönder" />
-                        <div class="submitting"></div>
+                        <input id="submit" type="submit" class="btn btn-dark form-control" value="Gönder" />
+                        <div class="submitting text-white mt-2">
+                            <div class="alert">
+                                @TempData["Mesaj"]
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            
+
         </form>
-      </div>
+    </div>
 </div>
-
-
-
-
 
 
 <footer class="py-3 my-4 ">
@@ -116,4 +118,3 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-

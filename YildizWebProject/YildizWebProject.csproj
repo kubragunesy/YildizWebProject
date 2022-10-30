@@ -177,10 +177,6 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\PagedList.css" />
     <Content Include="Content\sweetalert.css" />
-    <Content Include="Content\sweetalert\bootstrap-sweetalert.png" />
-    <Content Include="Content\sweetalert\docs.css" />
-    <Content Include="Content\sweetalert\sweet-alert.css" />
-    <Content Include="Content\sweetalert\thumbs-up.jpg" />
     <Content Include="Content\toastr.css" />
     <Content Include="Content\toastr.min.css" />
     <Content Include="favicon.ico" />
@@ -340,8 +336,8 @@
     <Content Include="Scripts\toastr.min.js" />
     <Content Include="Views\Shared\layout.css" />
     <Content Include="Yildizİnsaat\Anasayfa\f.jpg" />
-    <Content Include="Yildizİnsaat\Anasayfa\logo.png" />
     <Content Include="Yildizİnsaat\Anasayfa\anasayfastyle.css" />
+    <Content Include="Yildizİnsaat\Anasayfa\logo1.png" />
     <Content Include="Yildizİnsaat\Hakkımızda\about.css" />
     <Content Include="Yildizİnsaat\Hizmetlerimiz\ab.jpg" />
     <Content Include="Yildizİnsaat\Hizmetlerimiz\hizmet.css" />
@@ -358,6 +354,7 @@
     <Content Include="Yildizİnsaat\iletisim\css\bootstrap\_media.css" />
     <Content Include="Yildizİnsaat\iletisim\css\iletisim.css" />
     <Content Include="Yildizİnsaat\iletisim\f.jpg" />
+    <Content Include="Yildizİnsaat\iletisim\f1.png" />
     <Content Include="Yildizİnsaat\iletisim\iletisim.css" />
     <Content Include="Yildizİnsaat\iletisim\js\bootstrap.min.js" />
     <Content Include="Yildizİnsaat\iletisim\js\google-map.js" />
@@ -365,12 +362,10 @@
     <Content Include="Yildizİnsaat\iletisim\js\jquery.validate.min.js" />
     <Content Include="Yildizİnsaat\iletisim\js\main.js" />
     <Content Include="Yildizİnsaat\iletisim\js\popper.js" />
+    <Content Include="Yildizİnsaat\iletisim\style.css" />
     <Content Include="Yildizİnsaat\index.html" />
     <Content Include="Yildizİnsaat\Projelerimiz\proje.css" />
     <Content Include="Yildizİnsaat\proje.css" />
-    <Content Include="Content\sweetalert\sweet-alert.less" />
-    <Content Include="Content\sweetalert\sweet-alert-combine.less" />
-    <Content Include="Content\sweetalert\sweet-alert-animations.less" />
     <Content Include="Content\bootstrap\variables.less" />
     <Content Include="Content\bootstrap\mixins.less" />
     <Content Include="Content\toastr.scss" />
@@ -2362,8 +2357,6 @@
     <Content Include="Yildizİnsaat\iletisim\fonts\.DS_Store" />
     <Content Include="Yildizİnsaat\iletisim\images\.DS_Store" />
     <Content Include="Yildizİnsaat\iletisim\js\.DS_Store" />
-    <Content Include="Yildizİnsaat\iletisim\php\.DS_Store" />
-    <Content Include="Yildizİnsaat\iletisim\php\sendEmail.php" />
     <Content Include="Yildizİnsaat\iletisim\scss\.DS_Store" />
     <Content Include="Yildizİnsaat\iletisim\scss\bootstrap\.DS_Store" />
     <Content Include="Yildizİnsaat\iletisim\scss\bootstrap\bootstrap-grid.scss" />
@@ -2461,14 +2454,12 @@
     <Content Include="Views\CompanyInfo\Index.cshtml" />
     <Content Include="Views\CompanyInfo\GuncelleIletisimBilgisi.cshtml" />
     <Content Include="Views\CompanyInfo\YeniIletisimBilgisi.cshtml" />
-    <Content Include="Views\Sweet\Alert.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Icon\" />
     <Folder Include="Image\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\ImageAdd\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

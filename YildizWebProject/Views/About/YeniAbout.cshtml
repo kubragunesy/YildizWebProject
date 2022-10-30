@@ -20,18 +20,22 @@
         <br />
         @Html.TextBoxFor(x => x.aboutName, new { @class = "form-control" })
         <div id="aboutName" class="validation-container">
-            @*@Html.ValidationMessageFor(x => x.businessName, null, new { @class = "text-danger" })*@
+         
         </div>
         <br />
         @Html.Label("Hakkımızda Açıklaması")
         <br />
         @Html.TextBoxFor(x => x.aboutDescription, new { @class = "form-control" })
         <div id="aboutDescription" class="validation-container">
-            @*@Html.ValidationMessageFor(x => x.businessDescription, null, new { @class = "text-danger" })*@
+       
         </div>
         <br />
-       
+
         <input type="submit" value="Ekle" class="form-control bg-success text-white" />
+        <div class="alert">
+            @TempData["Mesaj"]
+        </div>
+        
     }
 
 </div>

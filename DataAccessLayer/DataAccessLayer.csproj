@@ -70,9 +70,9 @@
     <Compile Include="Concrete\EntityFramework\EfContactDal.cs" />
     <Compile Include="Concrete\EntityFramework\EfGenericDal.cs" />
     <Compile Include="Concrete\EntityFramework\EfProjectDal.cs" />
-    <Compile Include="Migrations\202210122236114_mig44.cs" />
-    <Compile Include="Migrations\202210122236114_mig44.designer.cs">
-      <DependentUpon>202210122236114_mig44.cs</DependentUpon>
+    <Compile Include="Migrations\202210282115049_mig3.cs" />
+    <Compile Include="Migrations\202210282115049_mig3.designer.cs">
+      <DependentUpon>202210282115049_mig3.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -91,11 +91,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\PagedList.css" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202210122236114_mig44.resx">
-      <DependentUpon>202210122236114_mig44.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202210282115049_mig3.resx">
+      <DependentUpon>202210282115049_mig3.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

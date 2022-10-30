@@ -11,8 +11,7 @@
 <div class="container-fluid">
 
 
-    @using (Html.BeginForm("YeniProje", "Project", FormMethod.Post, @*new
-    { @class = "form-group" }*@ new {enctype = "multipart/form-data"}))
+    @using (Html.BeginForm("YeniProje", "Project", FormMethod.Post, new {enctype = "multipart/form-data"}))
     {
         
         @Html.HiddenFor(x => x.projectId)
@@ -32,9 +31,7 @@
         <br />
         @Html.Label("Medya Seç")
         <br />
-        //Html.TextBoxFor(x => x.projectMediaUrl, new { @class = "form-control" })
         <div id="projectMediaUrl" class="validation-container">
-           @*@Html.ValidationMessageFor(x => x.projectMediaUrl, null, new {@class="text-danger"})*@
         </div>
         <input type="file" name="projectMediaUrl" />
         <br />
@@ -44,11 +41,6 @@
         <br />
         @Html.Label("Statü")
         <br />
-        <!--@Html.TextBoxFor(x => x.statu, new { @class = ".form-control" })
-        <div id="statu" class="validation-continer">-->
-        @*@Html.ValidationMessageFor(x => x.businessDescription)*@
-        <!--</div>
-        <br />-->
         <select class="form-control" name="statu">
             <option value="true">Aktif</option>
             <option value="false">Pasif</option>

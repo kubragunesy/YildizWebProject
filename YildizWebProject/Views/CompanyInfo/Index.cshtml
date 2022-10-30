@@ -31,10 +31,10 @@
 
 <table class="table">
     <tr>
-        <th>İletişim Bilgisi ID</th>
+        <th>ID</th>
         <th>İletişim Bilgisi Adı</th>
-        <th>İletişim Bilgisi Logo</th>
-        <th>İletişim Açıklaması</th>
+        <th>Logo</th>
+        <th>Açıklama</th>
         <th>Statü</th>
     </tr>
     @foreach (var item in Model)
@@ -42,7 +42,7 @@
         <tr>
             <td>@item.Id</td>
             <td>@item.name</td>
-            <td>@item.logo</td>
+            <td><img width="32" height="32" src="~/Icon/@item.logo"/></td>
             <td>@item.description</td>
             <td>@item.statu</td>
             <td>
