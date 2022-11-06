@@ -9,6 +9,8 @@ using PagedList.Mvc;
 using System.Web;
 using System.IO;
 using System;
+using System.Net.Mail;
+using System.Net;
 
 namespace YildizWebProject.Controllers
 {
@@ -83,12 +85,14 @@ namespace YildizWebProject.Controllers
             businessManager.Update(hizmet);
             return RedirectToAction("Index");
         }
+
         [HttpGet]
         public ActionResult GuncelleHizmet(int id)
         {
             var guncelle = businessManager.Get(id);
             return View(guncelle);
         }
+
         [HttpPost]
         public ActionResult GuncelleHizmet(Business business, HttpPostedFileBase businessIcon)
         {
@@ -96,9 +100,17 @@ namespace YildizWebProject.Controllers
             var sonuc = businessValidation.Validate(business);
             if (sonuc.IsValid)
             {
-
                 try
                 {
+                    var smtpClient = new SmtpClient("smtp.gmail.com")
+                    {
+                        Port = 587,
+                        Credentials = new NetworkCredential("username", "password"),
+                        EnableSsl = true,
+                    };
+
+                    smtpClient.Send("email", "recipient", "web sitenizden bir mail var", "body");
+
 
                     if (businessIcon != null && businessIcon.ContentLength > 0)
                     {
@@ -118,10 +130,13 @@ namespace YildizWebProject.Controllers
                 //    ViewBag.message = exc.Message.ToString();
 
                 //}
-                catch (Exception)
+                catch (Exception ex)
                 {
                     ViewBag.message = "Görsel seçilmedi";
 
+                    // ex.ToString() bunu dblog tablosuna inser et
+
+                    return View();
                 }
 
 

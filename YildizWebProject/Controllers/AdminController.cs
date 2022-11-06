@@ -25,8 +25,12 @@ namespace YildizWebProject.Controllers
             var sonuc = context.Admins.FirstOrDefault(x => x.adminUserName == admin.adminUserName && x.password == admin.password);
             if (sonuc != null)
             {
+                //Session nesneleri yardımıyla kullanıcılara ait oturum bilgileri sayfalar arasında taşınabilmektedir
+                //FormsAuthentication giriş-çıkış işlemlerinde kullanılır.
+                //Cookie kullanıcın websitesine girdiği anda kayıt altına alınan çerez türüdür. Kullanıcı çıktığında bu veriler kaybolur.
                 FormsAuthentication.SetAuthCookie(sonuc.adminUserName, false);
                 Session["adminUserName"]=admin.adminUserName;
+                ViewBag.cinsiyet = admin.adminCinsiyet;
                 return RedirectToAction("Index", "Business");
             }
             else

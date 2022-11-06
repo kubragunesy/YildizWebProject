@@ -131,8 +131,19 @@ namespace YildizWebProject.Controllers
                 TempData["Mesaj"] = "Hata oluştu, tekrar deneyiniz.";
 
             }
-            
+
             return RedirectToAction("Contact");
+
+            //var mailMessage = new MailMessage
+            //{
+            //    From = new MailAddress(contact.customerMail),
+            //    Subject = "Siteden Mesajınız Var.",
+            //    Body = contact.customerMail,
+            //    IsBodyHtml = true,
+            //};
+            //mailMessage.To.Add("abdussamet");
+
+            //smtpClient.Send(mailMessage);
         }
         public ActionResult Project()
         {
