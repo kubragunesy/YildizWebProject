@@ -15,6 +15,7 @@ namespace BusinessLayer.Validations
             RuleFor(x => x.businessName).NotEmpty().WithMessage("Hizmet adı giriniz!");
             RuleFor(x => x.businessName).MaximumLength(50).WithMessage("0-50 karakter giriniz!");
             RuleFor(x => x.businessDescription).NotEmpty().WithMessage("Hizmet açıklaması giriniz!");
+            RuleFor(x => x.businessIcon).NotEmpty().WithMessage("Ikon seçiniz!");
         }
     }
 }

@@ -102,22 +102,13 @@ namespace YildizWebProject.Controllers
             {
                 try
                 {
-                    var smtpClient = new SmtpClient("smtp.gmail.com")
-                    {
-                        Port = 587,
-                        Credentials = new NetworkCredential("username", "password"),
-                        EnableSsl = true,
-                    };
-
-                    smtpClient.Send("email", "recipient", "web sitenizden bir mail var", "body");
-
-
+                    
                     if (businessIcon != null && businessIcon.ContentLength > 0)
                     {
                         string path = Path.Combine(Server.MapPath("~/Icon"), Path.GetFileName(businessIcon.FileName));
                         businessIcon.SaveAs(path);
                         business.businessIcon = businessIcon.FileName;
-                        businessManager.Insert(business);
+                        businessManager.Update(business);
                     }
                     else
                     {
@@ -134,7 +125,7 @@ namespace YildizWebProject.Controllers
                 {
                     ViewBag.message = "Görsel seçilmedi";
 
-                    // ex.ToString() bunu dblog tablosuna inser et
+                    // ex.ToString() bunu dblog tablosuna insert et.
 
                     return View();
                 }

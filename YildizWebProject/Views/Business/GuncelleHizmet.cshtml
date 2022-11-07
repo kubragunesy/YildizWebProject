@@ -18,31 +18,26 @@
         <br />
         @Html.TextBoxFor(x => x.businessName, new { @class = "form-control" })
         <div id="businessName" class="validation-container">
-            
         </div>
         <br />
 
         @Html.Label("Hizmet Açıklaması")
         <br />
         @Html.TextBoxFor(x => x.businessDescription, new { @class = "form-control" })
-        <div id="businessDescription" class="validation-container">
-            
+        <div id="businessDescription" class="validation-container">  
         </div>
         <br />
-        @Html.Label("Icon Seç")
+        @Html.Label("Ikon Seç")
         <br />
-        
-        <div id="businessIcon" class="validation-container">
-           
+        <div id="businessIcon" class="validation-container" >
         </div>
-        <input type="file" name="businessIcon" />
+        <input type="file" name="businessIcon" required />
         <br />
         <br />
         @Html.Label("Statü")
         <br />
         
         <div id="statu" class="validation-container">
-          
         </div>
         <select class="form-control" name="statu">
             <option value="true">Aktif</option>

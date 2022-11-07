@@ -11,29 +11,22 @@
 <div class="container-fluid">
 
 
-    @using (Html.BeginForm("YeniProje", "Project", FormMethod.Post, new {enctype = "multipart/form-data"}))
+    @using (Html.BeginForm("YeniProje", "Project", FormMethod.Post, new { enctype = "multipart/form-data" }))
     {
-        
+
         @Html.HiddenFor(x => x.projectId)
         @Html.Label("Proje Adı")
         <br />
-        @Html.TextBoxFor(x => x.projectName, new { @class = "form-control" })
-        <div id="projectName" class="validation-container" >
-            @Html.ValidationMessageFor(x => x.projectName,null, new {@class="text-danger"})
-        </div>
+        <input type="text" name="projectName" class="form-control" required />
         <br />
+
         @Html.Label("Proje Açıklama")
         <br />
-        @Html.TextBoxFor(x => x.projectDescription, new { @class = "form-control" })
-        <div id="projectDescription" class="validation-container">
-            @Html.ValidationMessageFor(x => x.projectDescription, null, new {@class="text-danger"})
-        </div>
+        <input type="text" name="projectDescription" class="form-control" required />
         <br />
         @Html.Label("Medya Seç")
         <br />
-        <div id="projectMediaUrl" class="validation-container">
-        </div>
-        <input type="file" name="projectMediaUrl" />
+        <input type="file" name="projectMediaUrl" required />
         <br />
         <br />
         <span style="color:red">Uyarı : Lütfen sadece yatay görsel ekleyiniz.</span>

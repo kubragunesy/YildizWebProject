@@ -2,7 +2,7 @@
     ViewBag.Title = "Home Page";
 }
 @using EntitiyLayer.Concrete
-@model Contact
+@model List<Business>
 
 
 
@@ -59,7 +59,7 @@
                 <div class="col-sm-6">
                     <div class="form-group">
                         <input type="text" id="customerPhoneNumber" name="customerPhoneNumber"
-                               class="form-control rounded-0" pattern="[0-9]{11}"
+                               class="form-control rounded-0"
                                placeholder="Telefon Numaranız" required>
                         <div class="valid-feedback">Valid.</div>
                         <div class="invalid-feedback">Please fill out this field.</div>
@@ -93,29 +93,36 @@
         </form>
     </div>
 </div>
+<!-----------------------------business--------------------------->
+@*<div class="row">
 
-    <!-----------------------------footer--------------------------->
-    <footer class="py-3 my-4 " >
-        <ul class="nav justify-content-center pt-3 mt-5 " style="font-size:18px">
-            <li class="nav-item">
-                <a href="~/Home/Index" class="nav-link px-2 text-white">Anasayfa</a>
-            </li>
-            <li class="nav-item">
-                <a href="~/Home/About" class="nav-link px-2 text-white">Hakkımızda</a>
-            </li>
-            <li class="nav-item">
-                <a href="~/Home/Project" class="nav-link px-2 text-white">Projelerimiz</a>
-            </li>
-            <li class="nav-item">
-                <a href="~/Home/Business" class="nav-link px-2 text-white">Hizmetlerimiz</a>
-            </li>
-            <li class="nav-item">
-                <a href="~/Home/Contact" class="nav-link px-2 text-white">İletişim</a>
-            </li>
+    @foreach (var item in Model)
+    {
+         <div class="col-sm-2 text-white" > @item.businessName</div>    
+    }
+    </div>*@
+<!-----------------------------footer--------------------------->
+<footer class="py-3 my-4 ">
+    <ul class="nav justify-content-center pt-3 mt-5 " style="font-size:18px">
+        <li class="nav-item">
+            <a href="~/Home/Index" class="nav-link px-2 text-white">Anasayfa</a>
+        </li>
+        <li class="nav-item">
+            <a href="~/Home/About" class="nav-link px-2 text-white">Hakkımızda</a>
+        </li>
+        <li class="nav-item">
+            <a href="~/Home/Project" class="nav-link px-2 text-white">Projelerimiz</a>
+        </li>
+        <li class="nav-item">
+            <a href="~/Home/Business" class="nav-link px-2 text-white">Hizmetlerimiz</a>
+        </li>
+        <li class="nav-item">
+            <a href="~/Home/Contact" class="nav-link px-2 text-white">İletişim</a>
+        </li>
 
-        </ul>
-        <p class="text-center text-white mt-3">© 2022 Company, Inc</p>
-    </footer>
+    </ul>
+    <p class="text-center text-white mt-3">© 2022 Company, Inc</p>
+</footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>

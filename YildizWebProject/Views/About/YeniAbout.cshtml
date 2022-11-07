@@ -18,19 +18,12 @@
 
         @Html.Label("Hakkımızda Adı")
         <br />
-        @Html.TextBoxFor(x => x.aboutName, new { @class = "form-control" })
-        <div id="aboutName" class="validation-container">
-         
-        </div>
+        <input type="text" name="aboutName" class="form-control" required/>
         <br />
         @Html.Label("Hakkımızda Açıklaması")
         <br />
-        @Html.TextBoxFor(x => x.aboutDescription, new { @class = "form-control" })
-        <div id="aboutDescription" class="validation-container">
-       
-        </div>
+        <input type="text" name="aboutDescription" class="form-control" required/>
         <br />
-
         <input type="submit" value="Ekle" class="form-control bg-success text-white" />
         <div class="alert">
             @TempData["Mesaj"]

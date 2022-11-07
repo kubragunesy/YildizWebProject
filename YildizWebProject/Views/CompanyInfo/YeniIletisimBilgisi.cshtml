@@ -16,32 +16,18 @@
         @Html.HiddenFor(x => x.Id)
         @Html.Label("İletişim Bilgisi Adı")
         <br />
-        @Html.TextBoxFor(x => x.name, new { @class = "form-control" })
-        <div id="name" class="validation-container">
-           
-        </div>
+        <input type="text" name="name" class="form-control" required/>
         <br />
         @Html.Label("Ikon Seç")
         <br />
-        
-        <div id="logo" class="validation-container">
-          
-        </div>
-        <input type="file" name="logo" />
+       <input type="file" name="logo" required />
         <br />
-        <br />
-
         <br />
         @Html.Label("İletişim Bilgisi Açıklama")
         <br />
-        @Html.TextBoxFor(x => x.description, new { @class = "form-control" })
-        <div id="description" class="validation-container">
-           
-        </div>
+        <input type="text" name="description" class="form-control" required/>
         <br />
         @Html.Label("İletişim Bilgisi Statü")
-        <br />
-    
         <br />
         <select class="form-control" name="statu">
             <option value="true">Aktif</option>

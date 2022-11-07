@@ -17,7 +17,8 @@
         @Html.Label("Proje Adı")
         <br />
         @Html.TextBoxFor(x => x.projectName, new { @class = "form-control" })
-        <div id="projectName" class="validation-container">
+        <div id="projectName" class="validation-container" >
+
         </div>
         <br />
         @Html.Label("Proje Açıklama")
@@ -30,10 +31,7 @@
         @Html.Label("Medya Seç")
         <br />
 
-        <div id="projectMediaUrl" class="validation-container">
-
-        </div>
-        <input type="file" name="projectMediaUrl" />
+        <input type="file" name="projectMediaUrl" required />
         <br />
         <br />
         <span style="color:red">Uyarı : Lütfen sadece yatay görsel ekleyiniz.</span>

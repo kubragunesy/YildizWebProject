@@ -17,32 +17,22 @@
 
         @Html.Label("Hizmet Adı")
         <br />
-        @Html.TextBoxFor(x => x.businessName, new { @class = "form-control" })
-        <div id="businessName" class="validation-container">
-            @Html.ValidationMessageFor(x => x.businessName, null, new { @class = "text-danger" })
-        </div>
+        <input type="text" name="businessName" class="form-control" required/>
         <br />
+
         @Html.Label("Hizmet Açıklaması")
         <br />
-        @Html.TextBoxFor(x => x.businessDescription, new { @class = "form-control" })
-        <div id="businessDescription" class="validation-container">
-            @Html.ValidationMessageFor(x => x.businessDescription, null, new { @class = "text-danger" })
-        </div>
+        <input type="text" name="businessDescription" class="form-control" required/>
         <br />
-        @Html.Label("Icon Seç")
+
+        @Html.Label("Ikon Seç")
         <br />
-        
-        <div id="businessIcon" class="validation-container">
-            
-        </div>
-        <input type="file" name="businessIcon" />
+        <input type="file" name="businessIcon" required/>
         <br />
-        <br />
+
         @Html.Label("Statu")
         <br />
-        
         <div id="statu" class="validation-container">
-            
         </div>
         <select class="form-control" name="statu">
             <option value="true">Aktif</option>
