@@ -9,7 +9,7 @@
 <img src="https://user-images.githubusercontent.com/106705380/201098588-459adda7-64b8-4116-923a-fbfab2a7f9ea.png">
 <br> <br> <br>
 <h2> #Project Page </h2>
-<img src="https://user-images.githubusercontent.com/106705380/201099808-a4b4fddd-bc70-47e2-8060-3e8e63c69fc1.png">
+<img src="https://user-images.githubusercontent.com/106705380/201101219-aac8068c-8bf9-4983-a2ab-63730d8927e8.png">
 <br> <br> <br>
 <h2> #Business Page </h2>
 <img src="https://user-images.githubusercontent.com/106705380/201099709-902f25ec-ae19-4f6c-bac7-31ea13c700b3.png">
